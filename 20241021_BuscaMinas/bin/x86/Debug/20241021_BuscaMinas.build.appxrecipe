@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\face_ko.png">
       <PackagePath>Assets\img\face_ko.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\flag.png">
+      <PackagePath>Assets\img\flag.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\tile.png">
       <PackagePath>Assets\img\tile.png</PackagePath>
     </AppxPackagedFile>

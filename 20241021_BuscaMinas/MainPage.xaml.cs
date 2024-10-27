@@ -192,7 +192,7 @@ namespace _20241021_BuscaMinas
 
                     img.Tapped += FieldPressed;
 
-                    img.RightTapped += FieldRightPress;
+                    //img.RightTapped += FieldRightPress;
 
                     Punt p = new Punt(row, col);
                     img.Tag = p;

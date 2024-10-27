@@ -244,5 +244,33 @@ namespace _20241010_InventoryManager
             }
 
         }
+
+        private void Button_Click_Combine_Items(object sender, RoutedEventArgs e)
+        {
+            List<ItemInventory> itemsSelected = Inventory.SelectedItems.OfType<ItemInventory>().ToList();
+
+            Debug.WriteLine("COUNT SELECTED ITEMS: " + itemsSelected.Count);
+
+            foreach (Recipe recipe in recipes)
+            {
+                Debug.WriteLine("RECIPE:: " + recipe.Name+" - "+recipe.Items.Count);
+                foreach (KeyValuePair<Item, int> item_recipe in recipe.Items)
+                {
+                    foreach (ItemInventory item in itemsSelected) 
+                    {
+                        if(item_recipe.Key == item.Item)
+                        {
+                            /*
+                            Preparar semaforo para que cuando no este a false sea que esta se puede crear
+                            emezara el semaforo a true si da una vuelta si cumplir las condiciones no sera una combinacion valida para la receta
+                            */
+                            Debug.WriteLine("   TRUE " + item.Item + " - " + item.Quantity + " ::: " + item_recipe.Key + " - " + item_recipe.Value);
+                        }
+                    }
+                    
+                }
+            }
+
+        }
     }
 }

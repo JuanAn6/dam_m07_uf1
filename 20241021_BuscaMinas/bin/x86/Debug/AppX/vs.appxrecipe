@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>EF9356B8C2C1A6C821975D74A72BDC9C10884CCB59E2D4C271B9E7D3EB24CB0F</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>1C619393EC838DF0AD3C7371A44759CAFA0AE1A4B27A4C8263448825E41910F3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e445875d-9e1b-440a-b83a-ed67343a97f7_1.0.0.0_x86__dhwh0f9crhkwt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e445875d-9e1b-440a-b83a-ed67343a97f7_dhwh0f9crhkwt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e445875d-9e1b-440a-b83a-ed67343a97f7</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-24T17:23:36.250</Modified>
+      <Modified>2024-10-27T17:13:02.349</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\20241021_BuscaMinas.exe">
       <PackagePath>entrypoint\20241021_BuscaMinas.exe</PackagePath>
-      <Modified>2024-10-24T17:23:35.603</Modified>
+      <Modified>2024-10-27T17:13:00.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -53,6 +53,10 @@
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\face_ko.png">
       <PackagePath>Assets\img\face_ko.png</PackagePath>
       <Modified>2024-10-24T15:10:37.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\flag.png">
+      <PackagePath>Assets\img\flag.png</PackagePath>
+      <Modified>2024-10-24T17:32:09.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\tile.png">
       <PackagePath>Assets\img\tile.png</PackagePath>
@@ -102,11 +106,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-10-24T17:23:35.550</Modified>
+      <Modified>2024-10-27T17:13:00.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-10-24T17:23:35.550</Modified>
+      <Modified>2024-10-27T17:13:00.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -114,11 +118,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-24T16:54:57.201</Modified>
+      <Modified>2024-10-27T17:13:01.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\Core\20241021_BuscaMinas.exe">
       <PackagePath>20241021_BuscaMinas.exe</PackagePath>
-      <Modified>2024-10-24T17:23:36.250</Modified>
+      <Modified>2024-10-27T17:13:02.342</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -247,7 +247,7 @@
 
         <!-- INVENTARY -->
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1">
-            <GridView Name="Inventory" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <GridView x:Name="Inventory" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionMode="Multiple">
                 <GridView.ItemTemplate>
                     <DataTemplate>
                         <Grid Width="50" Height="50">
@@ -291,6 +291,7 @@
                 Grid.Row="1"  
                 Foreground="Black"
                 Background="CornflowerBlue" 
+                Click="Button_Click_Combine_Items"
                 ></Button>      
         </Grid>
 

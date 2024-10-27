@@ -37,7 +37,7 @@
 
             <TextBlock Grid.Row="0" Text="Items" FontSize="20"></TextBlock>
             
-            <ListView x:ConnectionId='23' 
+            <ListView x:ConnectionId='24' 
                 Grid.Row="1"
                 x:Name="lsvItems" 
                 ScrollViewer.VerticalScrollBarVisibility="Auto" 
@@ -87,7 +87,7 @@
 
             <TextBlock Grid.Row="0" Text="Recips" FontSize="20"></TextBlock>
 
-            <ListView x:ConnectionId='21' 
+            <ListView x:ConnectionId='22' 
                 Grid.Row="1"
                 x:Name="lsvRecips" Height="200"
                 ScrollViewer.VerticalScrollBarVisibility="Auto" 
@@ -126,7 +126,7 @@
             
             <TextBlock Grid.Row="0" Text="Items recipe" FontSize="20"></TextBlock>
 
-            <ListView x:ConnectionId='19' 
+            <ListView x:ConnectionId='20' 
                 Grid.Row="1"
                 x:Name="lsvItemsRecips" Height="200"
                 ScrollViewer.VerticalScrollBarVisibility="Auto" 
@@ -177,18 +177,18 @@
             <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Edit / New Item" FontSize="20"></TextBlock>
             
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Name: "></TextBlock>
-            <TextBox x:ConnectionId='14' x:Name="itemName" Grid.Row="1" Grid.Column="1" ></TextBox>
+            <TextBox x:ConnectionId='15' x:Name="itemName" Grid.Row="1" Grid.Column="1" ></TextBox>
 
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Image url: "></TextBlock>
-            <TextBox x:ConnectionId='15' x:Name="itemUrl" Grid.Row="2" Grid.Column="1" ></TextBox>
+            <TextBox x:ConnectionId='16' x:Name="itemUrl" Grid.Row="2" Grid.Column="1" ></TextBox>
 
             <StackPanel Grid.Row="3" Grid.ColumnSpan="2">
                 <TextBlock Text="Description"></TextBlock>
-                <TextBox x:ConnectionId='18' x:Name="itemDesc" TextWrapping="Wrap" ></TextBox>
+                <TextBox x:ConnectionId='19' x:Name="itemDesc" TextWrapping="Wrap" ></TextBox>
             </StackPanel>
 
-            <Button x:ConnectionId='16' Content="Add" Grid.Row="4" Grid.Column="0" Background="CornflowerBlue"                              ></Button>
-            <Button x:ConnectionId='17' Content="Save" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Background="CornflowerBlue"                               ></Button>
+            <Button x:ConnectionId='17' Content="Add" Grid.Row="4" Grid.Column="0" Background="CornflowerBlue"                              ></Button>
+            <Button x:ConnectionId='18' Content="Save" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Background="CornflowerBlue"                               ></Button>
             
         </Grid>
 
@@ -207,16 +207,16 @@
 
             <StackPanel Grid.Row="1" >
                 <TextBlock Text="Name: "></TextBlock>
-                <TextBox x:ConnectionId='12' x:Name="recipeName" TextWrapping="Wrap" ></TextBox>
+                <TextBox x:ConnectionId='13' x:Name="recipeName" TextWrapping="Wrap" ></TextBox>
                 <TextBlock  Grid.Row="1" Grid.Column="0" Text="Item: "></TextBlock>
-                <ComboBox x:ConnectionId='13' Grid.Row="1" Grid.Column="1" x:Name="rpCbItems" ></ComboBox>
+                <ComboBox x:ConnectionId='14' Grid.Row="1" Grid.Column="1" x:Name="rpCbItems" ></ComboBox>
             </StackPanel>
 
             <StackPanel Grid.Row="2" >
                 
             </StackPanel>
 
-            <Button x:ConnectionId='11' Content="Add" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Background="CornflowerBlue"                                 ></Button>
+            <Button x:ConnectionId='12' Content="Add" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Background="CornflowerBlue"                                 ></Button>
 
         </Grid>
 
@@ -236,18 +236,18 @@
             <TextBlock Grid.Row="0" Grid.ColumnSpan="2"  Text="Add item recipe" FontSize="20"></TextBlock>
 
             <TextBlock  Grid.Row="1" Grid.Column="0" Text="Item: "></TextBlock>
-            <ComboBox x:ConnectionId='8' Grid.Row="1" Grid.Column="1" x:Name="cbItems" ></ComboBox>
+            <ComboBox x:ConnectionId='9' Grid.Row="1" Grid.Column="1" x:Name="cbItems" ></ComboBox>
 
             <TextBlock  Grid.Row="2" Grid.Column="0" Text="Quatity: "></TextBlock>
-            <ComboBox x:ConnectionId='9' Grid.Row="2" Grid.Column="1" x:Name="cbQt" ></ComboBox>
+            <ComboBox x:ConnectionId='10' Grid.Row="2" Grid.Column="1" x:Name="cbQt" ></ComboBox>
 
-            <Button x:ConnectionId='10' Content="Add" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Background="CornflowerBlue"                                     ></Button>
+            <Button x:ConnectionId='11' Content="Add" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Background="CornflowerBlue"                                     ></Button>
 
         </Grid>
 
         <!-- INVENTARY -->
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1">
-            <GridView x:ConnectionId='6' Name="Inventory" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <GridView x:ConnectionId='7' x:Name="Inventory" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionMode="Multiple">
                 <GridView.ItemTemplate>
                     <DataTemplate>
                         <Grid Width="50" Height="50">
@@ -286,11 +286,12 @@
                 Background="CornflowerBlue"
                                                           
                 ></Button>
-            <Button 
+            <Button x:ConnectionId='6' 
                 Content="Combine" 
                 Grid.Row="1"  
                 Foreground="Black"
                 Background="CornflowerBlue" 
+                                                  
                 ></Button>      
         </Grid>
 
