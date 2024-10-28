@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace _20241021_BuscaMinas
 {
@@ -11,12 +12,17 @@ namespace _20241021_BuscaMinas
         public int row;
         public int col;
 
+        public bool IsFlagged {  get; set; }
+
+        public TextBlock MinaText { get; set; }
+
         public Punt(int row, int col)
         {
             this.row = row;
             this.col = col;
         }
 
+  
         public override bool Equals(object obj)
         {
             return obj is Punt punt &&

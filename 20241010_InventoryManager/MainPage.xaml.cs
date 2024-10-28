@@ -77,7 +77,7 @@ namespace _20241010_InventoryManager
             //GENERATE INVETORY
 
             inventoryStack = new Inventory(
-                new List<ItemInventory> {
+                new ObservableCollection<ItemInventory> {
                     {new ItemInventory(items.ElementAt(0), 2)},
                     {new ItemInventory(items.ElementAt(1), 3)},
                     {new ItemInventory(items.ElementAt(3), 10)},
@@ -191,13 +191,13 @@ namespace _20241010_InventoryManager
         private void Button_Click_Add_Item_Inventory(object sender, RoutedEventArgs e)
         {
             Item i = (Item)inCbItems.SelectedItem;
-            int qt = (int)(inCbQt.SelectedIndex != -1 ? cbQt.SelectedItem : -1);
+            int qt = (int)(inCbQt.SelectedIndex != -1 ? inCbQt.SelectedItem : -1);
 
             if (qt != 0 && i != null)
             {
                 if (inventoryStack.InventoryList.Contains(new ItemInventory(i, qt)))
                 {
-                    Debug.WriteLine("Añadir la cantidad: ", qt);
+                    Debug.WriteLine("Añadir la cantidad: "+ qt);
                 }
                 else
                 {
@@ -213,7 +213,7 @@ namespace _20241010_InventoryManager
                             Debug.WriteLine("Elemnt at: " + (inventoryStack.InventoryList.ElementAt<ItemInventory>(x).Quantity));
                             Debug.WriteLine("ENter!!");
 
-                            List<ItemInventory> auxList = inventoryStack.InventoryList;
+                            ObservableCollection<ItemInventory> auxList = inventoryStack.InventoryList;
 
                             auxList.RemoveAt(x);
                             auxList.Insert(x, new ItemInventory(i, qt));
@@ -226,7 +226,7 @@ namespace _20241010_InventoryManager
                         x++;
 
                     } while (x < inventoryStack.InventoryList.Count && !sem);
-
+                    // Calcular cuando tendre novia (tres puntos extra)
                 }
             }
 
@@ -235,42 +235,70 @@ namespace _20241010_InventoryManager
 
         private void Button_Click_Delete_Item_Inventory(object sender, RoutedEventArgs e)
         {
-            int indexSelected = Inventory.SelectedIndex;
-            Debug.WriteLine("Delete index: " + indexSelected);
-            if(indexSelected != -1)
+            
+            List<ItemInventory> selectedItems = Inventory.SelectedItems.Cast<ItemInventory>().ToList();
+
+            foreach (var item in selectedItems)
             {
-                inventoryStack.InventoryList.RemoveAt(indexSelected);
-                Inventory.ItemsSource = inventoryStack.InventoryList;
+                int index = inventoryStack.InventoryList.IndexOf(item);
+                if (index != -1)
+                {
+                    inventoryStack.InventoryList.RemoveAt(index);
+                    inventoryStack.InventoryList.Add(new ItemInventory(null, 0));
+                }
             }
+            
 
         }
 
         private void Button_Click_Combine_Items(object sender, RoutedEventArgs e)
         {
             List<ItemInventory> itemsSelected = Inventory.SelectedItems.OfType<ItemInventory>().ToList();
+            Recipe r_valid = null;
+            List<ItemInventory> itemsRecipeInventory = new List<ItemInventory>();
 
             Debug.WriteLine("COUNT SELECTED ITEMS: " + itemsSelected.Count);
 
             foreach (Recipe recipe in recipes)
             {
+                bool recipe_valida= true;
+
                 Debug.WriteLine("RECIPE:: " + recipe.Name+" - "+recipe.Items.Count);
                 foreach (KeyValuePair<Item, int> item_recipe in recipe.Items)
                 {
+                    bool have_item = false;
                     foreach (ItemInventory item in itemsSelected) 
                     {
-                        if(item_recipe.Key == item.Item)
+                        if (item_recipe.Key == item.Item && item_recipe.Value < item.Quantity)
                         {
-                            /*
-                            Preparar semaforo para que cuando no este a false sea que esta se puede crear
-                            emezara el semaforo a true si da una vuelta si cumplir las condiciones no sera una combinacion valida para la receta
-                            */
-                            Debug.WriteLine("   TRUE " + item.Item + " - " + item.Quantity + " ::: " + item_recipe.Key + " - " + item_recipe.Value);
+                            have_item = true; //Esta el item en els seleccionats i te suficient quantitat
+                            itemsRecipeInventory.Add(item);
                         }
                     }
-                    
+
+                    if(!have_item) //Si no esta el item entre els seleccionats la recepta pasa a ser no valida
+                    {
+                        recipe_valida = false;
+                        itemsRecipeInventory = new List<ItemInventory>();
+                    }
+                }
+                if (recipe_valida)// si la recepta es valida s'ha de afegir al inventari el item i restar els items utilitzats
+                {
+                    r_valid = recipe;
+                    return;
                 }
             }
 
+            if(r_valid != null)
+            {
+                AfegirItemAlInventari(r_valid, itemsRecipeInventory);
+            }
+
+        }
+
+        private void AfegirItemAlInventari(Recipe r_valid, List<ItemInventory> itemsRecipeInventory)
+        {
+            
         }
     }
 }

@@ -28,6 +28,34 @@ namespace _20241021_BuscaMinas
     public sealed partial class MainPage : Page
     {
 
+        public enum MODE
+        {
+            IN_GAME,
+            GAME_OVER
+        }
+
+        private MODE mode;
+
+        public MODE Mode
+        {
+            get { return mode; }
+            set {
+
+                switch (value)
+                {
+                    case MODE.IN_GAME:
+
+                        break;
+                    case MODE.GAME_OVER:
+
+                        break;
+                }
+                
+                mode = value; 
+            }
+        }
+
+
         private const int ROWS = 16;
         private const int COLS = 16;
         private const int MINES = 40;
@@ -89,17 +117,7 @@ namespace _20241021_BuscaMinas
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-
-
-            /*
-             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            */
-            
+            Mode = MODE.IN_GAME;
             
 
             for(int row = 0; row < ROWS; row++)
@@ -174,6 +192,8 @@ namespace _20241021_BuscaMinas
                     b.HorizontalAlignment = HorizontalAlignment.Center;
                     b.Padding = new Thickness(0);
 
+                    b.Visibility = Visibility.Collapsed;
+
                     //IMG
                     //<Image Source="/Assets/img/title.png">
                     Image img = new Image();
@@ -192,9 +212,12 @@ namespace _20241021_BuscaMinas
 
                     img.Tapped += FieldPressed;
 
-                    //img.RightTapped += FieldRightPress;
+                    img.RightTapped += FieldRightPress;
 
                     Punt p = new Punt(row, col);
+                    p.IsFlagged = false;
+                    p.MinaText = b;
+
                     img.Tag = p;
 
                     ImageList.Add(p, img);
@@ -203,11 +226,40 @@ namespace _20241021_BuscaMinas
 
         }
 
+        private void FieldRightPress(object sender, RightTappedRoutedEventArgs e)
+        {
+            if (Mode == MODE.GAME_OVER) return;
+
+            Image img = (Image)sender;
+            Punt p = (Punt)img.Tag;
+
+            BitmapImage i = new BitmapImage();
+            if (p.IsFlagged)
+            {
+                i.UriSource = new Uri("ms-appx://20241021_BuscaMinas/Assets/img/tile.png");
+            }
+            else
+            {
+                i.UriSource = new Uri("ms-appx://20241021_BuscaMinas/Assets/img/flag.png");
+            }
+
+            p.IsFlagged = !p.IsFlagged;
+            img.Tag = p;
+            img.Source = i;
+
+        }
+
         private void FieldPressed(object sender, TappedRoutedEventArgs e)
         {
+            if (Mode == MODE.GAME_OVER) return;
+
             Image image = (Image)sender;
-            image.Visibility = Visibility.Collapsed;
             Punt p = (Punt)image.Tag;
+            
+            if (p.IsFlagged) return; // no podem clicar sobre banderas
+            
+            image.Visibility = Visibility.Collapsed;
+            p.MinaText.Visibility = Visibility.Visible;
 
             CheckFieldsMines(p);
         }
@@ -219,18 +271,25 @@ namespace _20241021_BuscaMinas
             {
                 DestaparCasella(p);
             }
+            else
+            {
+                Mode = MODE.GAME_OVER;
+            }
 
         }
 
         private void DestaparCasella(Punt p)
         {
-            Debug.WriteLine("recursiva: " + p.row + " - "+p.col);
 
             if (p.col < 0 || p.col >= COLS || p.row < 0 || p.row >= ROWS) { return; }
-            if (tauler[p.row, p.col] > 0) return;
+            
 
             ImageList[p].Visibility = Visibility.Collapsed;
+            p.MinaText.Visibility = Visibility.Visible;
 
+            //Si ja ha pasat el primer nivell i es un numero destapa
+            if (tauler[p.row, p.col] > 0) return;
+            
             int[,] mods = { 
                 {0, 1 }, 
                 {0 , -1},
@@ -252,8 +311,10 @@ namespace _20241021_BuscaMinas
 
                 if (!ImageList.ContainsKey(n)) continue;
                 if (ImageList[n].Visibility == Visibility.Collapsed) continue;
+                
+                Punt complet = ImageList[n].Tag as Punt;
 
-                DestaparCasella(n);
+                DestaparCasella(complet);
             
             }
         }

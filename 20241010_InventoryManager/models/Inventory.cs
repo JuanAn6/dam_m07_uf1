@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,14 @@ namespace _20241010_InventoryManager.models
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private List<ItemInventory> inventoryList;
+        private ObservableCollection<ItemInventory> inventoryList = new ObservableCollection<ItemInventory>();
 
-        public Inventory(List<ItemInventory> inventoryList)
+        public Inventory(ObservableCollection<ItemInventory> inventoryList)
         {
             InventoryList = inventoryList;
         }
 
-        public List<ItemInventory> InventoryList
+        public ObservableCollection<ItemInventory> InventoryList
         {
 			get { return inventoryList; }
 			set { inventoryList = value; }
