@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -39,7 +40,7 @@ namespace _20241010_InventoryManager
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-           
+
 
             items.Add(new Item(0, "Axe", "Wooden bar with end of rock", "https://picsum.photos/id/1/100/100"));
             items.Add(new Item(1, "Torch", "Wooden with fire", "https://picsum.photos/id/2/100/100"));
@@ -61,7 +62,7 @@ namespace _20241010_InventoryManager
                 new KeyValuePair<Item, int>(items.ElementAt(4), 1),
                 new KeyValuePair<Item, int>(items.ElementAt(3), 1)
                 },
-                items.ElementAt(0)) 
+                items.ElementAt(0))
             );
 
             lsvRecips.ItemsSource = recipes;
@@ -69,10 +70,10 @@ namespace _20241010_InventoryManager
             rpCbItems.ItemsSource = items;
 
             cbItems.ItemsSource = items;
-            cbQt.ItemsSource = new List<int>{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            
+            cbQt.ItemsSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
             inCbItems.ItemsSource = items;
-            inCbQt.ItemsSource = new List<int>{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            inCbQt.ItemsSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             //GENERATE INVETORY
 
@@ -103,8 +104,8 @@ namespace _20241010_InventoryManager
 
         private void lsvRecips_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Recipe r = (Recipe) lsvRecips.SelectedItem;
-            Debug.WriteLine("Selected: "+r.Name);
+            Recipe r = (Recipe)lsvRecips.SelectedItem;
+            Debug.WriteLine("Selected: " + r.Name);
 
             lsvItemsRecips.ItemsSource = r.Items;
 
@@ -128,7 +129,7 @@ namespace _20241010_InventoryManager
         private void lsvItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-            Item i = (Item) lsvItems.SelectedItem;
+            Item i = (Item)lsvItems.SelectedItem;
 
             if (i != null)
             {
@@ -141,7 +142,7 @@ namespace _20241010_InventoryManager
 
         private void Button_Click_Save_Item(object sender, RoutedEventArgs e)
         {
-            if(!(itemName.Text.Trim().Length == 0 && itemDesc.Text.Trim().Length == 0 && itemUrl.Text.Trim().Length == 0) ) 
+            if (!(itemName.Text.Trim().Length == 0 && itemDesc.Text.Trim().Length == 0 && itemUrl.Text.Trim().Length == 0))
             {
                 Item i = (Item)lsvItems.SelectedItem;
                 if (i != null)
@@ -175,16 +176,16 @@ namespace _20241010_InventoryManager
 
         private void Button_Click_Add_Item_Recipe(object sender, RoutedEventArgs e)
         {
-            
+
             Item i = (Item)cbItems.SelectedItem;
             int qt = (int)(cbQt.SelectedIndex != -1 ? cbQt.SelectedItem : -1);
 
             Recipe r = (Recipe)lsvRecips.SelectedItem;
 
 
-            if (qt != -1 && qt != 0 && i != null && r != null) 
+            if (qt != -1 && qt != 0 && i != null && r != null)
             {
-                r.Items.Add(new KeyValuePair<Item, int>(i, qt));   
+                r.Items.Add(new KeyValuePair<Item, int>(i, qt));
             }
         }
 
@@ -195,47 +196,22 @@ namespace _20241010_InventoryManager
 
             if (qt != 0 && i != null)
             {
-                if (inventoryStack.InventoryList.Contains(new ItemInventory(i, qt)))
+                int index = inventoryStack.InventoryList.IndexOf(new ItemInventory(i, qt));
+                if (index != -1)
                 {
-                    Debug.WriteLine("Añadir la cantidad: "+ qt);
+                    inventoryStack.InventoryList[index].Quantity = inventoryStack.InventoryList[index].Quantity + qt;
                 }
                 else
                 {
-                    int x = 0;
-                    Debug.WriteLine("COUNT: " + inventoryStack.InventoryList.Count);
-                    bool sem = false;
-
-                    do {
-                        
-
-                        if (inventoryStack.InventoryList.ElementAt<ItemInventory>(x).Quantity == 0)
-                        {
-                            Debug.WriteLine("Elemnt at: " + (inventoryStack.InventoryList.ElementAt<ItemInventory>(x).Quantity));
-                            Debug.WriteLine("ENter!!");
-
-                            ObservableCollection<ItemInventory> auxList = inventoryStack.InventoryList;
-
-                            auxList.RemoveAt(x);
-                            auxList.Insert(x, new ItemInventory(i, qt));
-
-                            inventoryStack.InventoryList = auxList;
-                            Inventory.ItemsSource = inventoryStack.InventoryList;
-                            sem = true;
-                        }
-
-                        x++;
-
-                    } while (x < inventoryStack.InventoryList.Count && !sem);
-                    // Calcular cuando tendre novia (tres puntos extra)
+                    InsertNewInventoryItem(i, qt);
                 }
             }
-
 
         }
 
         private void Button_Click_Delete_Item_Inventory(object sender, RoutedEventArgs e)
         {
-            
+
             List<ItemInventory> selectedItems = Inventory.SelectedItems.Cast<ItemInventory>().ToList();
 
             foreach (var item in selectedItems)
@@ -243,11 +219,10 @@ namespace _20241010_InventoryManager
                 int index = inventoryStack.InventoryList.IndexOf(item);
                 if (index != -1)
                 {
-                    inventoryStack.InventoryList.RemoveAt(index);
-                    inventoryStack.InventoryList.Add(new ItemInventory(null, 0));
+                    DeleteItemInventory(index);
                 }
             }
-            
+
 
         }
 
@@ -257,26 +232,23 @@ namespace _20241010_InventoryManager
             Recipe r_valid = null;
             List<ItemInventory> itemsRecipeInventory = new List<ItemInventory>();
 
-            Debug.WriteLine("COUNT SELECTED ITEMS: " + itemsSelected.Count);
-
             foreach (Recipe recipe in recipes)
             {
-                bool recipe_valida= true;
+                bool recipe_valida = true;
 
-                Debug.WriteLine("RECIPE:: " + recipe.Name+" - "+recipe.Items.Count);
                 foreach (KeyValuePair<Item, int> item_recipe in recipe.Items)
                 {
                     bool have_item = false;
-                    foreach (ItemInventory item in itemsSelected) 
+                    foreach (ItemInventory item in itemsSelected)
                     {
-                        if (item_recipe.Key == item.Item && item_recipe.Value < item.Quantity)
+                        if (item_recipe.Key == item.Item && item_recipe.Value <= item.Quantity)
                         {
                             have_item = true; //Esta el item en els seleccionats i te suficient quantitat
                             itemsRecipeInventory.Add(item);
                         }
                     }
 
-                    if(!have_item) //Si no esta el item entre els seleccionats la recepta pasa a ser no valida
+                    if (!have_item) //Si no esta el item entre els seleccionats la recepta pasa a ser no valida
                     {
                         recipe_valida = false;
                         itemsRecipeInventory = new List<ItemInventory>();
@@ -285,11 +257,11 @@ namespace _20241010_InventoryManager
                 if (recipe_valida)// si la recepta es valida s'ha de afegir al inventari el item i restar els items utilitzats
                 {
                     r_valid = recipe;
-                    return;
+                    break;
                 }
             }
 
-            if(r_valid != null)
+            if (r_valid != null)
             {
                 AfegirItemAlInventari(r_valid, itemsRecipeInventory);
             }
@@ -298,7 +270,60 @@ namespace _20241010_InventoryManager
 
         private void AfegirItemAlInventari(Recipe r_valid, List<ItemInventory> itemsRecipeInventory)
         {
-            
+            //Buscar el element dins del inventari per sumarli un o afegir-lo si no hi es
+            Item result = r_valid.Result;
+
+            int index = inventoryStack.InventoryList.IndexOf(new ItemInventory(result, 0));
+            if (index != -1)
+            {
+                inventoryStack.InventoryList[index].Quantity = inventoryStack.InventoryList[index].Quantity + 1;
+            }
+            else
+            {
+                InsertNewInventoryItem(result, 1);
+            }
+
+            //Restar la quantitat de cada item de la recepta dels items del inventari (si fa falta eliminar el item del inventari
+
+            foreach (KeyValuePair<Item, int> item_recipe in r_valid.Items)
+            {
+                int index_item = inventoryStack.InventoryList.IndexOf(new ItemInventory(item_recipe.Key, 0));
+
+                if (inventoryStack.InventoryList[index_item].Quantity - 1 > 0)
+                {
+                    inventoryStack.InventoryList[index_item].Quantity = inventoryStack.InventoryList[index_item].Quantity - 1;
+                }
+                else
+                {
+                    DeleteItemInventory(index_item);
+                }
+
+            }
+
         }
+
+        private void InsertNewInventoryItem(Item i , int qt)
+        {
+            int x = 0;
+            bool sem = false;
+
+            do {       
+                if (inventoryStack.InventoryList.ElementAt<ItemInventory>(x).Quantity == 0)
+                {
+                    inventoryStack.InventoryList.RemoveAt(x);
+                    inventoryStack.InventoryList.Insert(x, new ItemInventory(i, qt));
+
+                    sem = true;
+                }
+                x++;
+            } while (x < inventoryStack.InventoryList.Count && !sem);
+        }
+
+        private void DeleteItemInventory(int index)
+        {
+            inventoryStack.InventoryList.RemoveAt(index);
+            inventoryStack.InventoryList.Add(new ItemInventory(null, 0));
+        }
+
     }
 }
