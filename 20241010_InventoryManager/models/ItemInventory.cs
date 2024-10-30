@@ -27,6 +27,13 @@ namespace _20241010_InventoryManager.models
 			set { quantity = value; }
 		}
 
+        public String QuantityXAML
+        {
+            get { 
+                return quantity == 0 ? "" : ""+quantity;
+            }
+        }
+
 		public Item Item
 		{
 			get { return item; }

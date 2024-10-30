@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Quantity" />
     <RootPropertyPathName Name="Item" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="QuantityXAML" />
     <RootPropertyPathName Name="Collection" />
     <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="Key" />
@@ -49,6 +49,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="TextAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox" />
@@ -76,7 +77,6 @@
       <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="Height" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="ItemTemplate" />

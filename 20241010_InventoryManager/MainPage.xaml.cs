@@ -185,8 +185,34 @@ namespace _20241010_InventoryManager
 
             if (qt != -1 && qt != 0 && i != null && r != null)
             {
-                r.Items.Add(new KeyValuePair<Item, int>(i, qt));
+                //Comprobar la llista de items i actualitzar la qt del item si ja hi es si no afegir-lo
+                int exist = -1;
+                int index = 0;
+                foreach(KeyValuePair<Item, int> test in r.Items)
+                {
+                    if (test.Key == i) {
+                        exist = index;
+                    }
+                    else
+                    {
+                        index++;
+                    }
+                    
+                }
+
+
+                if (exist != -1)
+                {
+                    r.Items.RemoveAt(exist);
+                    r.Items.Insert(exist, new KeyValuePair<Item, int>(i, qt));
+                }
+                else
+                {
+                    r.Items.Add(new KeyValuePair<Item, int>(i, qt));
+                }
             }
+
+
         }
 
         private void Button_Click_Add_Item_Inventory(object sender, RoutedEventArgs e)

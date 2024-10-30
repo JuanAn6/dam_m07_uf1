@@ -1,1 +1,0 @@
-C:\DAM2\M07\UF1\20241010_InventoryManager\20241010_InventoryManager.csproj;x86

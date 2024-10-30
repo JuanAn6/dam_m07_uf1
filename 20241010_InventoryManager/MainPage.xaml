@@ -89,7 +89,7 @@
 
             <ListView 
                 Grid.Row="1"
-                x:Name="lsvRecips" Height="200"
+                x:Name="lsvRecips"
                 ScrollViewer.VerticalScrollBarVisibility="Auto" 
                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                 ScrollViewer.HorizontalScrollMode="Disabled"
@@ -128,7 +128,7 @@
 
             <ListView 
                 Grid.Row="1"
-                x:Name="lsvItemsRecips" Height="200"
+                x:Name="lsvItemsRecips" 
                 ScrollViewer.VerticalScrollBarVisibility="Auto" 
                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                 ScrollViewer.HorizontalScrollMode="Disabled"
@@ -261,8 +261,8 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="2*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Row="0" Text="{Binding Item.Name}" FontSize="15" HorizontalAlignment="Center"/>
-                            <TextBlock Grid.Row="1" Text="{Binding Quantity}" FontSize="10" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Row="0" Text="{Binding QuantityXAML}" FontSize="10" HorizontalAlignment="Left" Padding="9"/>
+                            <TextBlock Grid.Row="1" Text="{Binding Item.Name}" FontSize="12" HorizontalAlignment="Center"/>
                         </Grid>
                     </DataTemplate>
                 </GridView.ItemTemplate>
