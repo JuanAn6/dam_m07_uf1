@@ -12,7 +12,7 @@
 
     <Grid ColumnSpacing="20" RowSpacing="20" Padding="20">
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="/Assets/img/potion_class.png"/>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/img/laboratorio.png"/>
         </Grid.Background>
         <Grid.RowDefinitions >
             <RowDefinition Height="*"></RowDefinition>
@@ -36,7 +36,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Row="0" Text="Items" FontSize="20"></TextBlock>
-            
+
             <ListView 
                 Grid.Row="1"
                 x:Name="lsvItems" 
@@ -61,13 +61,12 @@
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="2*"></ColumnDefinition>
-                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="9*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Id}" Grid.Column="0" Grid.Row="0"></TextBlock>
-                            <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0"></TextBlock>
-                            <TextBlock Text="{Binding Desc}" Grid.Column="2" Grid.Row="0"></TextBlock>
+
+                            <TextBlock Text="{Binding Name}" Grid.Column="0" Grid.Row="0"></TextBlock>
+                            <TextBlock Text="{Binding Desc}" Grid.Column="1" Grid.Row="0"></TextBlock>
 
                         </Grid>
                     </DataTemplate>
@@ -106,9 +105,16 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel>
-                            <TextBlock Text="{Binding Name}"></TextBlock>
-                        </StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="6*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{Binding Name}"></TextBlock>
+                            <TextBlock Grid.Column="1" Text="Item result->" HorizontalAlignment="Right"></TextBlock>
+                            <TextBlock Grid.Column="2" Text="{Binding Result.Name}"></TextBlock>
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -123,7 +129,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <TextBlock Grid.Row="0" Text="Items recipe" FontSize="20"></TextBlock>
 
             <ListView 
@@ -173,9 +179,9 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Edit / New Item" FontSize="20"></TextBlock>
-            
+
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Name: "></TextBlock>
             <TextBox x:Name="itemName" Grid.Row="1" Grid.Column="1" ></TextBox>
 
@@ -188,8 +194,9 @@
             </StackPanel>
 
             <Button Content="Add" Grid.Row="4" Grid.Column="0" Background="CornflowerBlue" Click="Button_Click_Add_Item"></Button>
-            <Button Content="Save" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Background="CornflowerBlue" Click="Button_Click_Save_Item"></Button>
-            
+            <Button Content="Save" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Background="CornflowerBlue" Click="Button_Click_Save_Item"></Button>
+            <Button Content="Delete" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Background="CornflowerBlue" Click="Button_Click_Delete_Item"></Button>
+
         </Grid>
 
         <!-- FROMULARIO RECIPS -->
@@ -213,10 +220,11 @@
             </StackPanel>
 
             <StackPanel Grid.Row="2" >
-                
+
             </StackPanel>
 
             <Button Content="Add" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Background="CornflowerBlue" Click="Button_Click_Add_Recipe" ></Button>
+            <Button Content="Delete" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Background="CornflowerBlue" Click="Button_Click_Delete_Recipe" ></Button>
 
         </Grid>
 
@@ -242,6 +250,7 @@
             <ComboBox Grid.Row="2" Grid.Column="1" x:Name="cbQt" ></ComboBox>
 
             <Button Content="Add" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Background="CornflowerBlue" Click="Button_Click_Add_Item_Recipe"></Button>
+            <Button Content="Delete" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Background="CornflowerBlue" Click="Button_Click_Delete_Recipe_Item"></Button>
 
         </Grid>
 
@@ -277,8 +286,9 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <Button 
                 Content="Delete" 
                 Grid.Row="0" 
@@ -292,7 +302,42 @@
                 Foreground="Black"
                 Background="CornflowerBlue" 
                 Click="Button_Click_Combine_Items"
-                ></Button>      
+                ></Button>
+
+            <ListView 
+                Grid.Column="1"
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                x:Name="lsvRecipsCombine"
+                ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                ScrollViewer.HorizontalScrollMode="Disabled"
+                ScrollViewer.VerticalScrollMode="Auto"
+                ItemsSource="{Binding Collection}"
+                SelectionChanged="lsvRecipsCombine_SelectionChanged"
+                >
+
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="6*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{Binding Name}"></TextBlock>
+                            <TextBlock Grid.Column="1" Text="Item result->" HorizontalAlignment="Right"></TextBlock>
+                            <TextBlock Grid.Column="2" Text="{Binding Result.Name}"></TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </Grid>
 
         <!-- FORMULARIO ADD ITEMS INVENTORY-->
@@ -329,6 +374,3 @@
 
     </Grid>
 </Page>
-    
-    
-    <!-- <GridView> para el inventario -->

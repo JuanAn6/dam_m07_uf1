@@ -43,3 +43,8 @@ C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\qualifiers.txt.intermediate
 C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\ProjectArchitectures.txt
 C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638194388980000000.json
+C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\View\UCBoard.g.i.cs
+C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\View\UCBoard.g.cs
+C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\View\UCBoard.xaml
+C:\DAM2\M07\UF1\20241021_BuscaMinas\obj\x86\Debug\View\UCBoard.xbf
+C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\View\UCBoard.xbf

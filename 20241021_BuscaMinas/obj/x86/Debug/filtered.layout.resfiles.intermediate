@@ -1,5 +1,6 @@
 Assets\img\face.png
 Assets\img\face_ko.png
+Assets\img\face_win.gif
 Assets\img\flag.png
 Assets\img\tile.png
 Assets\LockScreenLogo.scale-200.png
@@ -12,5 +13,6 @@ Assets\Wide310x150Logo.scale-200.png
 20241021_BuscaMinas.xr.xml
 App.xbf
 MainPage.xbf
+View\UCBoard.xbf
 Properties\Default.rd.xml
 WinMetadata\Windows.winmd

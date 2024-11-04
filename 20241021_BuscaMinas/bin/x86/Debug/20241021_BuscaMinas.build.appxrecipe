@@ -73,6 +73,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Assets\img\face_win.gif">
+      <PackagePath>Assets\img\face_win.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -84,6 +87,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241021_BuscaMinas\bin\x86\Debug\View\UCBoard.xbf">
+      <PackagePath>View\UCBoard.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

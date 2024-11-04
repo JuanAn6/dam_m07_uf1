@@ -134,8 +134,10 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\img\alquimia_class.png" />
     <Content Include="Assets\img\InventoryCell.png" />
     <Content Include="Assets\img\potion_class.png" />
+    <Content Include="Assets\img\laboratorio.png" />
     <Content Include="FodyWeavers.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

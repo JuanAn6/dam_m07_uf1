@@ -30,6 +30,8 @@ namespace _20241010_InventoryManager
         ObservableCollection<Item> items = new ObservableCollection<Item>();
 
         ObservableCollection<Recipe> recipes = new ObservableCollection<Recipe>();
+        ObservableCollection<Recipe> recipes_valids = new ObservableCollection<Recipe>();
+
 
         Inventory inventoryStack = null;
 
@@ -66,6 +68,8 @@ namespace _20241010_InventoryManager
             );
 
             lsvRecips.ItemsSource = recipes;
+
+            lsvRecipsCombine.ItemsSource = recipes_valids;
 
             rpCbItems.ItemsSource = items;
 
@@ -105,9 +109,11 @@ namespace _20241010_InventoryManager
         private void lsvRecips_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Recipe r = (Recipe)lsvRecips.SelectedItem;
-            Debug.WriteLine("Selected: " + r.Name);
-
-            lsvItemsRecips.ItemsSource = r.Items;
+            if(r != null)
+            {
+                Debug.WriteLine("Selected: " + r.Name);
+                lsvItemsRecips.ItemsSource = r.Items;
+            }
 
         }
 
@@ -235,6 +241,97 @@ namespace _20241010_InventoryManager
 
         }
 
+        private void Button_Click_Delete_Item(object sender, RoutedEventArgs e)
+        {
+            int index = (int)lsvItems.SelectedIndex;
+
+            if(index != -1)
+            {
+                Item i = items[index];
+               
+                
+                //Eliminar de la lista de ingredientes donde se use ese item (si la receta se queda sin items tambien se elimina)
+                foreach (Recipe r in recipes)
+                {
+                    List<KeyValuePair<Item, int>> items_delete = new List<KeyValuePair<Item, int>>();
+                    
+                    foreach (KeyValuePair<Item, int> item_r in r.Items)
+                    {
+                        if (item_r.Key.Name.Equals(i.Name))
+                        {
+                            items_delete.Add(item_r);
+                        }
+                    }
+                    foreach(KeyValuePair<Item, int> item_delete in items_delete)
+                    {
+                        r.Items.Remove(item_delete);
+                    }
+                }
+
+                //Eliminar de la lista de recetas, recetas con ese item como resultado o items 0 por la eliminacion de antes
+                List<Recipe> recipes_delete = new List<Recipe>();
+                foreach (Recipe r in recipes)
+                {
+                    if (r.Result.Name.Equals(i.Name) || r.Items.Count == 0)
+                    {
+                        //recipes.Remove(r);
+                        recipes_delete.Add(r);
+                    }
+                }
+
+                foreach (Recipe r in recipes_delete)
+                {
+                    recipes.Remove(r);
+                }
+
+
+                //Elimnar del inventario
+                List<ItemInventory> inventory_delete = new List<ItemInventory>();
+                foreach(ItemInventory item_i in inventoryStack.InventoryList)
+                {
+                    if(item_i.Item != null && i.Name.Equals(item_i.Item.Name))
+                    {
+                        inventory_delete.Add(item_i);
+                    }
+                }
+                
+                foreach(ItemInventory item_delete in inventory_delete)
+                {
+                    DeleteItemInventory(0, item_delete);
+                }
+
+
+                //Se elimina de la lista de items;
+                items.RemoveAt(index);
+
+
+            }
+
+        }
+        private void Button_Click_Delete_Recipe(object sender, RoutedEventArgs e)
+        {
+            int index = (int)lsvRecips.SelectedIndex;
+            if(index != -1)
+            {
+                recipes.RemoveAt(index);
+                lsvItemsRecips.ItemsSource = null;
+            }
+
+        }
+        private void Button_Click_Delete_Recipe_Item(object sender, RoutedEventArgs e)
+        {
+            int index = (int)lsvRecips.SelectedIndex;
+            int index_item = (int)lsvItemsRecips.SelectedIndex;
+
+            if (index != -1 && index_item != -1)
+            {
+                recipes[index].Items.RemoveAt(index_item);
+                if (recipes[index].Items.Count == 0)
+                {
+                    recipes.RemoveAt(index);
+                }
+            }
+        }
         private void Button_Click_Delete_Item_Inventory(object sender, RoutedEventArgs e)
         {
 
@@ -254,8 +351,9 @@ namespace _20241010_InventoryManager
 
         private void Button_Click_Combine_Items(object sender, RoutedEventArgs e)
         {
+            recipes_valids.Clear();
+
             List<ItemInventory> itemsSelected = Inventory.SelectedItems.OfType<ItemInventory>().ToList();
-            Recipe r_valid = null;
             List<ItemInventory> itemsRecipeInventory = new List<ItemInventory>();
 
             foreach (Recipe recipe in recipes)
@@ -282,19 +380,18 @@ namespace _20241010_InventoryManager
                 }
                 if (recipe_valida)// si la recepta es valida s'ha de afegir al inventari el item i restar els items utilitzats
                 {
-                    r_valid = recipe;
-                    break;
+                    recipes_valids.Add(recipe);
                 }
             }
 
-            if (r_valid != null)
+            if (recipes_valids.Count == 1)
             {
-                AfegirItemAlInventari(r_valid, itemsRecipeInventory);
+                AfegirItemAlInventari(recipes_valids.ElementAt<Recipe>(0));
             }
 
         }
-
-        private void AfegirItemAlInventari(Recipe r_valid, List<ItemInventory> itemsRecipeInventory)
+        
+        private void AfegirItemAlInventari(Recipe r_valid)
         {
             //Buscar el element dins del inventari per sumarli un o afegir-lo si no hi es
             Item result = r_valid.Result;
@@ -326,6 +423,7 @@ namespace _20241010_InventoryManager
 
             }
 
+            recipes_valids.Clear();
         }
 
         private void InsertNewInventoryItem(Item i , int qt)
@@ -345,11 +443,26 @@ namespace _20241010_InventoryManager
             } while (x < inventoryStack.InventoryList.Count && !sem);
         }
 
-        private void DeleteItemInventory(int index)
+        private void DeleteItemInventory(int index, ItemInventory item = null)
         {
-            inventoryStack.InventoryList.RemoveAt(index);
+            if(item == null)
+            {
+                inventoryStack.InventoryList.RemoveAt(index);
+            }
+            else
+            {
+                inventoryStack.InventoryList.Remove(item);
+            }
             inventoryStack.InventoryList.Add(new ItemInventory(null, 0));
         }
 
+        private void lsvRecipsCombine_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Recipe r = (Recipe)lsvRecipsCombine.SelectedItem;
+            if(r != null)
+            {
+                AfegirItemAlInventari(r);
+            }
+        }
     }
 }
