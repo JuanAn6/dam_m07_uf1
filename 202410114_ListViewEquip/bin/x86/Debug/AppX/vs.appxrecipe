@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-17T16:39:01.871</Modified>
+      <Modified>2024-11-20T19:33:44.236</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\202410114_ListViewEquip.exe">
       <PackagePath>entrypoint\202410114_ListViewEquip.exe</PackagePath>
-      <Modified>2024-10-17T16:39:01.187</Modified>
+      <Modified>2024-11-20T19:33:43.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -90,23 +90,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-10-17T16:39:01.130</Modified>
+      <Modified>2024-11-20T19:33:43.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-10-17T16:39:01.130</Modified>
+      <Modified>2024-11-20T19:33:43.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\Views\CrudPage.xbf">
       <PackagePath>Views\CrudPage.xbf</PackagePath>
-      <Modified>2024-10-17T16:39:01.130</Modified>
+      <Modified>2024-11-20T19:33:43.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\Views\UCEquip.xbf">
       <PackagePath>Views\UCEquip.xbf</PackagePath>
-      <Modified>2024-10-17T16:39:01.130</Modified>
+      <Modified>2024-11-20T19:33:43.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\Views\UCJugadors.xbf">
       <PackagePath>Views\UCJugadors.xbf</PackagePath>
-      <Modified>2024-10-17T16:39:01.132</Modified>
+      <Modified>2024-11-20T19:33:43.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\202410114_ListViewEquip\bin\x86\Debug\Core\202410114_ListViewEquip.exe">
       <PackagePath>202410114_ListViewEquip.exe</PackagePath>
-      <Modified>2024-10-17T16:39:01.867</Modified>
+      <Modified>2024-11-20T19:33:44.234</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="_20241121_DataGrid.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_20241121_DataGrid"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+
+    <Grid>
+        <controls:DataGrid 
+            x:Name="dg" 
+            GridLinesVisibility="All"
+            AlternatingRowBackground="#444444"
+            HeadersVisibility="Column"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding Path=Heroes}"
+        >
+            <controls:DataGrid.ColumnHeaderStyle>
+                <Style TargetType="wctprimitives:DataGridColumnHeader">
+                    <Setter Property="FontWeight">
+                        <Setter.Value>Bold</Setter.Value>
+                    </Setter>
+                    <Setter Property="FontSize" Value="20"></Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="wctprimitives:DataGridColumnHeader">
+                                <ContentPresenter Background="#999999" />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </controls:DataGrid.ColumnHeaderStyle>
+
+
+
+
+            <controls:DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <StackPanel Padding="10" Spacing="3">
+                        <controls:DataGrid ItemsSource="{Binding Team.Heroes}" />
+                    </StackPanel>
+                </DataTemplate>
+            </controls:DataGrid.RowDetailsTemplate>
+
+
+            <controls:DataGrid.Columns>
+
+                <controls:DataGridTemplateColumn Header="Image">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding UrlPhoto}" Width="100" />
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTextColumn Binding="{Binding Name}" Header="Name" />
+                <controls:DataGridTextColumn Binding="{Binding Desc}" MaxWidth="300" Header="Desc" />
+
+                <controls:DataGridTemplateColumn Header="Team">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Source="{Binding Team.UrlPhoto}" Width="50" HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding Team.Name}" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTemplateColumn Header="AlterEgos">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <ListBox ItemsSource="{Binding AlterEgos}" ></ListBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
+
+                <controls:DataGridTextColumn Binding="{Binding SexIcon}" MaxWidth="200" Header="SEX" />
+            
+            
+            </controls:DataGrid.Columns>
+
+
+
+        </controls:DataGrid>
+    </Grid>
+</Page>
