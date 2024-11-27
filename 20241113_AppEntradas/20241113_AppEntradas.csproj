@@ -123,6 +123,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Cadira.cs" />
+    <Compile Include="Model\Estat.cs" />
     <Compile Include="Model\Event.cs" />
     <Compile Include="Model\Sala.cs" />
     <Compile Include="Model\Tarifa.cs" />

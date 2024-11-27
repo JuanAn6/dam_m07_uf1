@@ -15,7 +15,7 @@ namespace _20241113_AppEntradas.Model
         private string desc;
         private string imgPath;
         private DateTime data;
-
+        private Estat estat;
         private Sala sala;
         private List<Tarifa> tarifes;
 
