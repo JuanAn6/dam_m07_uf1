@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image Source="/Assets/dromedario_arabe.png" />
+        <Image Source="/Assets/dormedario_viajero.jpg" />
     </Grid>
 </Page>

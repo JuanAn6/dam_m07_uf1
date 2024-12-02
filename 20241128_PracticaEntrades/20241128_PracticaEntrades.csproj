@@ -146,6 +146,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\dormedario_viajero.jpg" />
     <Content Include="Assets\dromedario_arabe.png" />
     <Content Include="Assets\mustang_toro_tia.png" />
     <Content Include="Properties\Default.rd.xml" />

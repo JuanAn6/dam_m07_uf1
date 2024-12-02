@@ -32,5 +32,21 @@ namespace _20241128_PracticaEntrades.Model
             this.sala = sala;
             this.tarifes = tarifes;
         }
+
+        public TipusEvent Tipus { get => tipus; set => tipus = value; }
+        public long Id { get => id; set => id = value; }
+        public string Nom { get => nom; set => nom = value; }
+        public string Protagonista { get => protagonista; set => protagonista = value; }
+        public string Desc { get => desc; set => desc = value; }
+        public string ImgPath { get => imgPath; set => imgPath = value; }
+        public DateTime Data { get => data; set => data = value; }
+        public Estat Estat { get => estat; set => estat = value; }
+        public Sala Sala { get => sala; set => sala = value; }
+        public List<Tarifa> Tarifes { get => tarifes; set => tarifes = value; }
+
+        public string FormatDate
+        {
+            get => Data.ToString("dd/MM/yyyy");
+        }
     }
 }

@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\Assets\dormedario_viajero.jpg">
+      <PackagePath>Assets\dormedario_viajero.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\Assets\dromedario_arabe.png">
       <PackagePath>Assets\dromedario_arabe.png</PackagePath>
     </AppxPackagedFile>
