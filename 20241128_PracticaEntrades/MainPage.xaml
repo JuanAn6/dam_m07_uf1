@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="_20241128_PracticaEntrades.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_20241128_PracticaEntrades"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+
+    <NavigationView PaneDisplayMode="Top" ItemInvoked="NavigationView_ItemInvoked" Name="navigation" IsSettingsVisible="False" IsBackButtonVisible="Collapsed">
+        <NavigationView.MenuItems>
+            <!--
+            <NavigationViewItem Content="Home" Icon="Home" ToolTipService.ToolTip="Home" Tag="_20241128_PracticaEntrades.HomePage"></NavigationViewItem>
+            -->
+            
+            <NavigationViewItem Content="Events" ToolTipService.ToolTip="Home" Tag="_20241128_PracticaEntrades.EventsPage">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE787;"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <NavigationViewItem Content="Salas" ToolTipService.ToolTip="Home" Tag="_20241128_PracticaEntrades.SalasPage">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE707;"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            
+
+        </NavigationView.MenuItems>
+
+        <Frame x:Name="frm"></Frame>
+        
+    </NavigationView>
+</Page>
