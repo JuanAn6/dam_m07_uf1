@@ -10,9 +10,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="Page_Loaded">
 
-    <Grid>
-        <constrols:DataGrid>
-            
-        </constrols:DataGrid>
-    </Grid>
+    <StackPanel Orientation="Vertical">
+        <TextBlock x:Name="countTB"></TextBlock>
+        <constrols:DataGrid x:Name="dataGrid"></constrols:DataGrid>
+    </StackPanel>
 </Page>

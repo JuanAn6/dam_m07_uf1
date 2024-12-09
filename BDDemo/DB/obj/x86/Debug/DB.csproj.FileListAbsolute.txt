@@ -1,2 +1,0 @@
-C:\DAM2\M07\UF1\BDDemo\DB\obj\x86\Debug\DB.csproj.AssemblyReference.cache
-C:\DAM2\M07\UF1\BDDemo\DB\obj\x86\Debug\DB.csproj.CoreCompileInputs.cache

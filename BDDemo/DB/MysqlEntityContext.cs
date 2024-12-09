@@ -11,7 +11,7 @@ namespace DB
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
-            optionBuilder.UseMySQL("server=localhost;database=bddemo;uid=root;pwd=;");
+            optionBuilder.UseMySql("Server=localhost;Database=empresa_dam;User=root;Password=;");
         }
     }
 }

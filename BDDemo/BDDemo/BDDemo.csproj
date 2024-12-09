@@ -158,9 +158,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{5DC3F0BD-94BD-4FB8-BB53-03D9027AF7C9}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\DB\DB.csproj">
+      <Project>{af210ca9-dec7-4be2-bf88-f1e2ca434177}</Project>
+      <Name>DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelStandard\ModelStandard.csproj">
+      <Project>{9c8eb3c9-a58c-4f84-b085-2409c27205c6}</Project>
+      <Name>ModelStandard</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

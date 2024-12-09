@@ -1,4 +1,5 @@
-﻿using Model.model;
+﻿using DB;
+using Model.model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -30,7 +31,11 @@ namespace BDDemo
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            List<Dept> departaments = Depts.GetDepts();
+            dataGrid.ItemsSource = departaments;
+
+            countTB.Text = ""+Depts.CountDepts();
+
         }
     }
 }
