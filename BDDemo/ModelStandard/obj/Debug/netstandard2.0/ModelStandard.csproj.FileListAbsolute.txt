@@ -8,3 +8,5 @@ C:\DAM2\M07\UF1\BDDemo\ModelStandard\obj\Debug\netstandard2.0\ModelStandard.Asse
 C:\DAM2\M07\UF1\BDDemo\ModelStandard\obj\Debug\netstandard2.0\ModelStandard.csproj.CoreCompileInputs.cache
 C:\DAM2\M07\UF1\BDDemo\ModelStandard\obj\Debug\netstandard2.0\ModelStandard.dll
 C:\DAM2\M07\UF1\BDDemo\ModelStandard\obj\Debug\netstandard2.0\ModelStandard.pdb
+C:\DAM2\M07\UF1\BDDemo\ModelStandard\obj\Debug\netstandard2.0\ModelStandard.csproj.Fody.CopyLocal.cache
+C:\DAM2\M07\UF1\BDDemo\ModelStandard\obj\Debug\netstandard2.0\ModelStandard.csproj.Fody.RuntimeCopyLocal.cache

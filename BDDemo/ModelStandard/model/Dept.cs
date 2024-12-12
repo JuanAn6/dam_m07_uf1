@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Model.model
 {
-    public class Dept
+    public class Dept : INotifyPropertyChanged
     {
-        
+        public event PropertyChangedEventHandler PropertyChanged;
+
 
         private int dept_no;
 

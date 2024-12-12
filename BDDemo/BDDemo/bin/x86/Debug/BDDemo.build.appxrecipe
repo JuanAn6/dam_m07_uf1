@@ -115,6 +115,9 @@
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\BDDemo\BDDemo\FodyWeavers.xml">
+      <PackagePath>FodyWeavers.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\BDDemo\BDDemo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>

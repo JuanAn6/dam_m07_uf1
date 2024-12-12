@@ -93,3 +93,6 @@ C:\DAM2\M07\UF1\BDDemo\BDDemo\bin\x86\Debug\Pomelo.EntityFrameworkCore.MySql.dll
 C:\DAM2\M07\UF1\BDDemo\BDDemo\bin\x86\Debug\Pomelo.JsonObject.dll
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\Pomelo.EntityFrameworkCore.MySql\en-US\Pomelo.EntityFrameworkCore.MySql.Properties.MySqlJsonStrings.resw
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\Pomelo.EntityFrameworkCore.MySql\en-US\Pomelo.EntityFrameworkCore.MySql.Properties.MySqlStrings.resw
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.Fody.CopyLocal.cache
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.Fody.RuntimeCopyLocal.cache

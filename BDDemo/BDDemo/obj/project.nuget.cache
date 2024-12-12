@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "COLQcR+Y+YgM4WtaM6+iA0ETK+jpmCvNolpDtMEzUzRENbsduBhroJcSg4wNajaMH+CaNoazKLMYkHLSlFmcIA==",
+  "dgSpecHash": "mMC0rcK1MqZ+3FjQbswOXrRgHkvJcLkDM/DW2ttNtGqYKJgzlzvB1u224eiU+zJlrh8PQvXpEBceLxXLAP0oAw==",
   "success": true,
   "projectFilePath": "C:\\DAM2\\M07\\UF1\\BDDemo\\BDDemo\\BDDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Juan Antonio\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
     "C:\\Users\\Juan Antonio\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Juan Antonio\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Juan Antonio\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -33,6 +34,7 @@
     "C:\\Users\\Juan Antonio\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Juan Antonio\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.7\\pomelo.entityframeworkcore.mysql.3.2.7.nupkg.sha512",
     "C:\\Users\\Juan Antonio\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
+    "C:\\Users\\Juan Antonio\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.12-rel-31116-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.8-rel-31116-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.8-rel-31116-00.nupkg.sha512",
