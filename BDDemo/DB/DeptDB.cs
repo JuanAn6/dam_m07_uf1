@@ -125,6 +125,38 @@ namespace DB
 
         }
 
+        public static List<Dept> GetDeptsPage(int currentPage, float items_per_page)
+        {
+            List<Dept> departaments = new List<Dept>();
+            using (MysqlEntityContext context = new MysqlEntityContext())
+            {
+                using (var connexio = context.Database.GetDbConnection()) // <== NOTA IMPORTANT: requereix ==>using Microsoft.EntityFrameworkCore;
+                {
+                    // Obrir la connexió a la BD
+                    connexio.Open();
+
+                    // Crear una consulta SQL
+                    using (var consulta = connexio.CreateCommand())
+                    {
+
+                        // query SQL
+                        consulta.CommandText = @"select * from dept limit "+items_per_page+" offset "+currentPage;
+                        var reader = consulta.ExecuteReader();
+                        while (reader.Read()) // per cada Read() avancem una fila en els resultats de la consulta.
+                        {
+                            int dept_no = reader.GetInt32(reader.GetOrdinal("DEPT_NO"));
+                            string dnom = reader.GetString(reader.GetOrdinal("DNOM"));
+                            string loc = reader.GetString(reader.GetOrdinal("LOC"));
+
+                            departaments.Add(new Dept(dept_no, dnom, loc));
+                        }
+                    }
+
+                }
+            }
+            return departaments;
+        }
+
         public static bool insertDept(Dept d)
         {
             using (MysqlEntityContext context = new MysqlEntityContext())
@@ -141,7 +173,7 @@ namespace DB
                     {
 
                         //recojer el lastId
-                        int last_id = DeptDB.lastIdDepts(consulta,trans);
+                        decimal last_id = DeptDB.lastIdDepts(consulta,trans);
 
                         //INCREMENTAR EL LAST_ID NS CUANDO!!!!!!!
 
@@ -151,6 +183,8 @@ namespace DB
                         //Necessari per que la consulta estigui en la transacció
                         consulta.Transaction = trans;
 
+                        last_id = last_id + 10;
+
                         DBUtils.createParam(consulta, last_id, "dept_no", System.Data.DbType.Int32);
                         DBUtils.createParam(consulta, d.DNom, "dnom", System.Data.DbType.String);
                         DBUtils.createParam(consulta, d.Loc, "loc", System.Data.DbType.String);
@@ -159,8 +193,11 @@ namespace DB
                         try
                         {
                             filesAfectades = consulta.ExecuteNonQuery();
+                            
                             if (filesAfectades == 1)
                             {
+                                lastIdDeptsIncrement(consulta, trans, last_id);
+
                                 trans.Commit();
                                 return true;
                             }
@@ -169,8 +206,9 @@ namespace DB
                                 trans.Rollback();
                             }
                         }
-                        catch (Exception)
+                        catch (Exception e)
                         {
+                            Debug.WriteLine("ERROR!!! "+e.Message);
                             trans.Rollback();
                         }
 
@@ -235,18 +273,31 @@ namespace DB
 
         }
 
-        private static int lastIdDepts(DbCommand consulta, DbTransaction trans)
+        private static decimal lastIdDepts(DbCommand consulta, DbTransaction trans)
         {
             // query SQL
-            consulta.CommandText = @"update last_id where table_name='dept' for update";
+            consulta.CommandText = @"select last_id from ids where table_name='dept' for update"; //for update; per fer que la taula es bloquegi
 
             //Necessari per que la consulta estigui en la transacció
             consulta.Transaction = trans;
 
-            int last_id = (int)consulta.ExecuteScalar();
+            decimal last_id = (decimal)consulta.ExecuteScalar();
 
             return last_id;
 
+
+        }
+        private static void lastIdDeptsIncrement(DbCommand consulta, DbTransaction trans, decimal num)
+        {
+            // query SQL
+            consulta.CommandText = @"update ids set last_id = @num where table_name='dept' "; //for update; per fer que la taula es bloquegi
+
+            //Necessari per que la consulta estigui en la transacció
+            consulta.Transaction = trans;   
+
+            DBUtils.createParam(consulta, num, "num", System.Data.DbType.Decimal);
+            
+            consulta.ExecuteNonQuery();
 
         }
 

@@ -17,5 +17,27 @@ namespace _20241128_PracticaEntrades.Model
 
         private int numColumnes, numFiles;
         private bool teMapa;
+
+        public Sala(long id, string nom, string adreca, string municipi, List<Zona> zones, int numColumnes, int numFiles, bool teMapa)
+        {
+            this.Id = id;
+            this.Nom = nom;
+            this.Adreca = adreca;
+            this.Municipi = municipi;
+            this.Zones = zones;
+            this.NumColumnes = numColumnes;
+            this.NumFiles = numFiles;
+            this.TeMapa = teMapa;
+
+        }
+
+        public long Id { get => id; set => id = value; }
+        public string Nom { get => nom; set => nom = value; }
+        public string Adreca { get => adreca; set => adreca = value; }
+        public string Municipi { get => municipi; set => municipi = value; }
+        public int NumColumnes { get => numColumnes; set => numColumnes = value; }
+        public int NumFiles { get => numFiles; set => numFiles = value; }
+        public bool TeMapa { get => teMapa; set => teMapa = value; }
+        internal List<Zona> Zones { get => zones; set => zones = value; }
     }
 }

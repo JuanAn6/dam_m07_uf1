@@ -69,6 +69,7 @@ namespace BDDemo
             }
         }
 
+        public float Items_per_page { get; private set; }
 
         public MainPage()
         {
@@ -92,9 +93,22 @@ namespace BDDemo
 
         private void LoadAll()
         {
-            List<Dept> departaments = DeptDB.GetDepts();
+            long num_dept = DeptDB.CountDepts();
+            
+            countTB.Text = "" + num_dept;
+
+            Items_per_page = 2;
+
+            int numPage = (int)MathF.Ceiling(num_dept / (float)Items_per_page);
+            
+            pgc.MaxPage = numPage;
+            pgc.MinPage = 1;
+
+            pgc.CurrentPage = Math.Min(pgc.CurrentPage, numPage);
+
+            List<Dept> departaments = DeptDB.GetDeptsPage(pgc.CurrentPage, Items_per_page);
             dataGrid.ItemsSource = departaments;
-            countTB.Text = "" + DeptDB.CountDepts();
+
         }
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -122,7 +136,7 @@ namespace BDDemo
             {
                 //Validacions...
 
-                Dept d = new Dept(Int32.Parse(txbNum.Text), txbNom.Text, txbLoc.Text);
+                Dept d = new Dept(0, txbNom.Text, txbLoc.Text);
 
                 DeptDB.insertDept(d);
                 
@@ -160,6 +174,11 @@ namespace BDDemo
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             ModeActual = Mode.INICIAL;
+        }
+
+        private void pgc_PageChanged(DBDemo.View.PaginationControl sender, EventArgs args)
+        {
+            LoadAll();
         }
     }
 }

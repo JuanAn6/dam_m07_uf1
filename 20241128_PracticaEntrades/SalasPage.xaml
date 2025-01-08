@@ -5,10 +5,77 @@
     xmlns:local="using:_20241128_PracticaEntrades"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
 
-    <Grid>
-        <TextBlock Text="Sala Page"></TextBlock>
+    <Grid Padding="20" RowSpacing="5" ColumnSpacing="5">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Text="Salas list" FontSize="30" HorizontalAlignment="Center" Grid.Row="0"></TextBlock>
+        <Grid Grid.Row="1" ColumnSpacing="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox PlaceholderText="Search..."  Grid.Column="0" Margin="5"/>
+            <Button Width="50" Height="50" Grid.Column="1" >
+                <FontIcon Glyph="&#59166;"/>
+            </Button>
+            <Button Width="50" Height="50" Grid.Column="2" HorizontalAlignment="Right">
+                <FontIcon Glyph="&#59213;"/>
+            </Button>
+            <Button Width="50" Height="50" Grid.Column="3" HorizontalAlignment="Right">
+                <FontIcon Glyph="&#59152;"/>
+            </Button>
+        </Grid>
+        
+        <controls:DataGrid
+        Grid.Row="2"
+        x:Name="dgEvents" 
+        GridLinesVisibility="All"
+        AlternatingRowBackground="#444444"
+        HeadersVisibility="Column"
+        AutoGenerateColumns="False"
+        ItemsSource="{Binding Path=Sales}"
+    >
+            <controls:DataGrid.ColumnHeaderStyle>
+                <Style TargetType="wctprimitives:DataGridColumnHeader">
+                    <Setter Property="FontWeight">
+                        <Setter.Value>Bold</Setter.Value>
+                    </Setter>
+                    <Setter Property="FontSize" Value="20"></Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="wctprimitives:DataGridColumnHeader">
+                                <ContentPresenter Background="#999999" />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </controls:DataGrid.ColumnHeaderStyle>
+
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Binding="{Binding Id}" Header="Id" />
+                <controls:DataGridTextColumn Binding="{Binding Nom}" Header="Nom" />
+                <controls:DataGridTextColumn Binding="{Binding Adreca}" Header="Adreça" />
+                <controls:DataGridTextColumn Binding="{Binding Municipi}" Header="Municipi" />
+            </controls:DataGrid.Columns>
+
+        </controls:DataGrid>
     </Grid>
 </Page>

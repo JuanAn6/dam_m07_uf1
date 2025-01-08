@@ -96,3 +96,8 @@ C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\Pomelo.EntityFrameworkCore.MySql\en-
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.GeneratedMSBuildEditorConfig.editorconfig
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.Fody.CopyLocal.cache
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.Fody.RuntimeCopyLocal.cache
+C:\DAM2\M07\UF1\BDDemo\BDDemo\bin\x86\Debug\View\PaginationControl.xbf
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.g.i.cs
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.g.cs
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.xaml
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.xbf

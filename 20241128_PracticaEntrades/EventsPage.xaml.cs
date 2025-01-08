@@ -44,6 +44,8 @@ namespace _20241128_PracticaEntrades
         public EventsPage()
         {
             this.InitializeComponent();
+            
+            Events.Clear();
 
             Events.Add(new Event(TipusEvent.TEATRE, 1, "La bella y la bestia ", "Adam Shadler", "Una tia y un toro", "ms-appx:///Assets/mustang_toro_tia.png", DateTime.Now, Estat.NOU, null, null));
             Events.Add(new Event(TipusEvent.TEATRE, 2, "Mamma Mia!", "La mama", "Pues mamma mia de toda la vida", "https://img.ecartelera.com/noticias/74700/74711-h3.jpg", DateTime.Now, Estat.NOU, null, null));

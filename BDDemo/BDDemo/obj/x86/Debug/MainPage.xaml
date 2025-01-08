@@ -5,7 +5,7 @@
     xmlns:local="using:BDDemo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    xmlns:constrols="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:constrols="using:Microsoft.Toolkit.Uwp.UI.Controls" xmlns:view="using:DBDemo.View"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
                         >
@@ -16,15 +16,26 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="5*"></RowDefinition>
-            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock x:ConnectionId='2' x:Name="countTB" Grid.Row="0" Grid.Column="0"></TextBlock>
         <constrols:DataGrid x:ConnectionId='3' x:Name="dataGrid" Grid.Row="1" Grid.Column="0"                                             ></constrols:DataGrid>
-        <Button x:ConnectionId='4' x:Name="delButton" Grid.Row="2" Grid.Column="0" Content="🚮"                        ></Button>
+        
+        <view:PaginationControl x:ConnectionId='4'
+                                         
+            x:Name="pgc"
+            Grid.Column="0" 
+            Grid.Row="2"
+            MaxPage="4"
+            MinPage="1"
+        ></view:PaginationControl>
+        
+        <Button x:ConnectionId='5' x:Name="delButton" Grid.Row="3" Grid.Column="0" Content="🚮"                        ></Button>
 
-        <Grid Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" RowSpacing="10" ColumnSpacing="10">
+        <Grid Grid.Row="0" Grid.Column="3" Grid.RowSpan="4" RowSpacing="10" ColumnSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -42,14 +53,14 @@
             <TextBlock Grid.Row="1" Grid.Column="0">Nom</TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="0">LOc</TextBlock>
 
-            <TextBox x:ConnectionId='5' x:Name="txbNum" IsEnabled="False" Grid.Row="0" Grid.Column="1" ></TextBox>
-            <TextBox x:ConnectionId='6' x:Name="txbNom" Grid.Row="1" Grid.Column="1" ></TextBox>
-            <TextBox x:ConnectionId='7' x:Name="txbLoc" Grid.Row="2" Grid.Column="1" ></TextBox>
+            <TextBox x:ConnectionId='6' x:Name="txbNum" IsEnabled="False" Grid.Row="0" Grid.Column="1" ></TextBox>
+            <TextBox x:ConnectionId='7' x:Name="txbNom" Grid.Row="1" Grid.Column="1" ></TextBox>
+            <TextBox x:ConnectionId='8' x:Name="txbLoc" Grid.Row="2" Grid.Column="1" ></TextBox>
 
 
-            <Button x:ConnectionId='8' x:Name="btnAdd"                      Grid.Row="3" Grid.Column="0" Content="ADD"></Button>
-            <Button x:ConnectionId='9' x:Name="btnCancel"                         Grid.Row="3" Grid.Column="0" Content="Cancel"></Button>
-            <Button x:ConnectionId='10' x:Name="btnSave"                       Grid.Row="3" Grid.Column="1" Content="SAVE"></Button>
+            <Button x:ConnectionId='9' x:Name="btnAdd"                      Grid.Row="3" Grid.Column="0" Content="ADD"></Button>
+            <Button x:ConnectionId='10' x:Name="btnCancel"                         Grid.Row="3" Grid.Column="0" Content="Cancel"></Button>
+            <Button x:ConnectionId='11' x:Name="btnSave"                       Grid.Row="3" Grid.Column="1" Content="SAVE"></Button>
 
 
         </Grid>
