@@ -44,7 +44,7 @@ namespace _20241128_PracticaEntrades
             Sales.Clear();
 
             Sales.Add(new Sala(1, "La Sala", "Cal font", "Igualada", new List<Zona>() , 10, 10, true));
-            Sales.Add(new Sala(2, "Douwntown", "Zona uni", "Barcelona", new List<Zona>() , 20, 20, true));
+            Sales.Add(new Sala(2, "Downtown", "Zona uni", "Barcelona", new List<Zona>() , 20, 20, true));
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -52,5 +52,6 @@ namespace _20241128_PracticaEntrades
             //dgEvents.ItemsSource = Events;
             this.DataContext = this;
         }
+
     }
 }
