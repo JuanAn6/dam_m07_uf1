@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>9DB25071740B1E4EFA0C812FBF7AB2B48F1A2181002E206B2813B78E6507A7CB</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6F910E4FB6E9976D303FE7F4DA8C6ACEC086B530AB8B275036AFFD51DCE293F7</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e6718b37-5139-4b80-a28f-402fdfe9050c_1.0.0.0_x86__dhwh0f9crhkwt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e6718b37-5139-4b80-a28f-402fdfe9050c_dhwh0f9crhkwt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e6718b37-5139-4b80-a28f-402fdfe9050c</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-08T19:13:28.907</Modified>
+      <Modified>2025-01-15T14:48:43.772</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\20241128_PracticaEntrades.exe">
       <PackagePath>entrypoint\20241128_PracticaEntrades.exe</PackagePath>
-      <Modified>2025-01-08T19:13:27.091</Modified>
+      <Modified>2025-01-15T14:48:38.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
@@ -106,27 +106,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\20241128_PracticaEntrades.xr.xml">
       <PackagePath>20241128_PracticaEntrades.xr.xml</PackagePath>
-      <Modified>2025-01-08T14:20:49.491</Modified>
+      <Modified>2025-01-15T14:48:38.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2025-01-08T19:13:26.982</Modified>
+      <Modified>2025-01-15T14:48:38.186</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\EventsPage.xbf">
-      <PackagePath>EventsPage.xbf</PackagePath>
-      <Modified>2025-01-08T19:13:26.982</Modified>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioSala.xbf">
+      <PackagePath>Views\EdicioSala.xbf</PackagePath>
+      <Modified>2025-01-15T14:48:38.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\HomePage.xbf">
-      <PackagePath>HomePage.xbf</PackagePath>
-      <Modified>2025-01-08T19:13:26.982</Modified>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EventsPage.xbf">
+      <PackagePath>Views\EventsPage.xbf</PackagePath>
+      <Modified>2025-01-15T14:48:38.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\HomePage.xbf">
+      <PackagePath>Views\HomePage.xbf</PackagePath>
+      <Modified>2025-01-15T14:48:38.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2025-01-08T19:13:26.982</Modified>
+      <Modified>2025-01-15T14:48:38.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\SalasPage.xbf">
-      <PackagePath>SalasPage.xbf</PackagePath>
-      <Modified>2025-01-08T19:13:26.982</Modified>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\SalasPage.xbf">
+      <PackagePath>Views\SalasPage.xbf</PackagePath>
+      <Modified>2025-01-15T14:48:38.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22621.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -138,11 +142,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-12-02T17:55:48.764</Modified>
+      <Modified>2025-01-15T14:48:41.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\20241128_PracticaEntrades.exe">
       <PackagePath>20241128_PracticaEntrades.exe</PackagePath>
-      <Modified>2025-01-08T19:13:28.901</Modified>
+      <Modified>2025-01-15T14:48:43.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

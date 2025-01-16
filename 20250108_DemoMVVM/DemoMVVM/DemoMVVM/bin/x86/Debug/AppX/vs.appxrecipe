@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>4B240F8BF6D3708758B68E5F5C8F84B89B0E2CA73BE3A251677166D0FD09B1D9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E94AAAA1FE7D79B490710FCDF137AD5E4E049C819854B9EF78002ED74E9FBD1F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>192fe315-b2d0-4651-b97e-61020e630273_1.0.0.0_x86__dhwh0f9crhkwt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>192fe315-b2d0-4651-b97e-61020e630273_dhwh0f9crhkwt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>192fe315-b2d0-4651-b97e-61020e630273</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-09T18:33:46.315</Modified>
+      <Modified>2025-01-16T18:29:27.223</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\DemoMVVM.exe">
       <PackagePath>entrypoint\DemoMVVM.exe</PackagePath>
-      <Modified>2025-01-09T18:33:45.662</Modified>
+      <Modified>2025-01-16T18:29:26.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
@@ -98,19 +98,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\DemoMVVM.xr.xml">
       <PackagePath>DemoMVVM.xr.xml</PackagePath>
-      <Modified>2025-01-09T18:32:53.223</Modified>
+      <Modified>2025-01-16T18:25:58.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2025-01-09T18:33:45.525</Modified>
+      <Modified>2025-01-16T18:29:26.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2025-01-09T18:33:45.525</Modified>
+      <Modified>2025-01-16T18:29:26.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\View\UCEditPersona.xbf">
       <PackagePath>View\UCEditPersona.xbf</PackagePath>
-      <Modified>2025-01-09T18:33:45.525</Modified>
+      <Modified>2025-01-16T18:29:26.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,11 +118,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-09T18:32:54.515</Modified>
+      <Modified>2025-01-16T16:42:09.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\Core\DemoMVVM.exe">
       <PackagePath>DemoMVVM.exe</PackagePath>
-      <Modified>2025-01-09T18:33:46.299</Modified>
+      <Modified>2025-01-16T18:29:27.218</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

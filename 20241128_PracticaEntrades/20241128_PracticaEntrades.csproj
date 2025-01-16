@@ -119,10 +119,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EventsPage.xaml.cs">
+    <Compile Include="Views\EdicioSala.xaml.cs">
+      <DependentUpon>EdicioSala.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventsPage.xaml.cs">
       <DependentUpon>EventsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.xaml.cs">
+    <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
@@ -136,7 +139,7 @@
     <Compile Include="Model\TipusEvent.cs" />
     <Compile Include="Model\Zona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalasPage.xaml.cs">
+    <Compile Include="Views\SalasPage.xaml.cs">
       <DependentUpon>SalasPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -163,11 +166,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="EventsPage.xaml">
+    <Page Include="Views\EdicioSala.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HomePage.xaml">
+    <Page Include="Views\EventsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,7 +182,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SalasPage.xaml">
+    <Page Include="Views\SalasPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

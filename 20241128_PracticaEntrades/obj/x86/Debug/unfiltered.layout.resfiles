@@ -10,9 +10,10 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 20241128_PracticaEntrades.xr.xml
 App.xbf
-EventsPage.xbf
-HomePage.xbf
 MainPage.xbf
-SalasPage.xbf
+Views\EdicioSala.xbf
+Views\EventsPage.xbf
+Views\HomePage.xbf
+Views\SalasPage.xbf
 Properties\Default.rd.xml
 WinMetadata\Windows.winmd

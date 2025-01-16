@@ -1,4 +1,5 @@
 ﻿using _20241128_PracticaEntrades.Model;
+using _20241128_PracticaEntrades.Views;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -53,5 +54,10 @@ namespace _20241128_PracticaEntrades
             this.DataContext = this;
         }
 
+        private void Button_New_Click(object sender, RoutedEventArgs e)
+        {
+            Frame frm = this.Parent as Frame;
+            frm.Navigate(typeof(EdicioSala));
+        }
     }
 }
