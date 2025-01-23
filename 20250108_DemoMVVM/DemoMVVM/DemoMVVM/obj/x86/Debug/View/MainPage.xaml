@@ -26,9 +26,9 @@
 
         </controls:DataGrid>
 
-        <Button x:ConnectionId='2' Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Margin="20"                                     ></Button>
-        
-        <view:UCEditPersona Grid.Column="1" LaPersona="{Binding PersonaSeleccionada }" ></view:UCEditPersona>
+        <Button x:ConnectionId='2' Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Content="Text" Margin="20"                                     ></Button>
+
+        <view:UCEditPersona x:ConnectionId='3' Grid.Column="1" LaPersona="{Binding PersonaSeleccionada }"                                                     ></view:UCEditPersona>
         
     </Grid>
 </Page>

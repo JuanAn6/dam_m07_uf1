@@ -52,14 +52,15 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="DemoMVVM.View.UCEditPersona">
       <RootProperty Name="LaPersona" />
+      <RootEvent Name="PersonaUpdated" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />

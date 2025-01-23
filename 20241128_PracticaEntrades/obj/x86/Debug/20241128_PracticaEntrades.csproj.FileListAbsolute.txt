@@ -22,7 +22,6 @@ C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\AppxManifest.xml
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\20241128_PracticaEntrades.build.appxrecipe
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\System.Runtime.dll
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\20241128_PracticaEntrades.csproj.CopyComplete
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\20241128_PracticaEntrades.exe
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\20241128_PracticaEntrades.pdb
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\ResourceHandlingTask.state
@@ -71,3 +70,5 @@ C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioSala.g.i.cs
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioSala.g.cs
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioSala.xaml
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioSala.xbf
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\20241128.8AA6DFD6.Up2Date
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638441419520000000.json

@@ -27,7 +27,7 @@ namespace DemoMVVM.ViewModel
 
         public MainPageViewModel()
         {
-            Persones = new ObservableCollection<PersonaViewModel>(Persona.GetPersones().Select(ele => new PersonaViewModel(ele) ));
+            GetListPersones();
             
         }
 
@@ -39,6 +39,10 @@ namespace DemoMVVM.ViewModel
 
         }
 
+        public void GetListPersones()
+        {
+            Persones = new ObservableCollection<PersonaViewModel>(Persona.GetPersones().Select(ele => new PersonaViewModel(ele)));
+        }
 
     }
 }

@@ -19,7 +19,9 @@ namespace DemoMVVM.View
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private Persona persona;
+        private EventHandler personaUpdated;
+
+        //private Persona persona;
 
         public PersonaViewModel PersonaOriginal { get; set; }
 
@@ -112,10 +114,11 @@ namespace DemoMVVM.View
         }
 
 
-        public PersonaViewModel(PersonaViewModel per)
+        public PersonaViewModel(PersonaViewModel per, EventHandler personaUpdated)
         {
+            this.personaUpdated = personaUpdated;
             this.PersonaOriginal = per;
-            this.persona = per.persona;
+            //this.persona = per.persona;
             this.Id = per.Id;
             this.Nom = per.Nom;
             this.Sexe = per.Sexe;
@@ -130,7 +133,7 @@ namespace DemoMVVM.View
         public PersonaViewModel(Persona per)
         {
 
-            this.persona = per;
+            //this.persona = per;
             this.Id = per.Id;
             this.Nom = per.Nom;
             this.Sexe = per.Sexe;
@@ -169,18 +172,41 @@ namespace DemoMVVM.View
 
         public void Save()
         {
-
+            
             int edat_aux;
             if (int.TryParse(this.Edat, out edat_aux))
             {
-                this.persona.Edat = edat_aux;
+                //this.persona.Edat = edat_aux;
 
                 PersonaOriginal.Edat = this.Edat;
 
-                PersonaOriginal.Nom = this.persona.Nom = this.Nom;
-                PersonaOriginal.Sexe = this.persona.Sexe = this.Sexe;
-                PersonaOriginal.Actiu = this.persona.Actiu = this.Actiu;
+                PersonaOriginal.Nom = this.Nom;
+                PersonaOriginal.Sexe = this.Sexe;
+                PersonaOriginal.Actiu = this.Actiu;
+                PersonaOriginal.ImageURL = this.ImageURL;
 
+                
+
+                if(this.Id == -1) { //INSERT
+
+                    this.Id = Persona.GetPersones().Max(x => x.Id) + 1;
+                    Persona.GetPersones().Add(new Persona(this.Id, this.Nom, this.Sexe, this.Actiu, this.ImageURL, edat_aux));
+
+                }
+                else //UPDATE
+                {   
+                    Persona p = Persona.GetPersones().Where(x => x.Id == Id).First();
+
+                    p.Edat = edat_aux;
+                    p.Nom = this.Nom;
+                    p.Sexe = this.Sexe;
+                    p.Actiu = this.Actiu;
+                    p.ImageURL = this.ImageURL;
+
+                }
+
+
+                this.personaUpdated?.Invoke(this, new EventArgs());
             }
 
 
@@ -197,5 +223,8 @@ namespace DemoMVVM.View
             this.Sexe = PersonaOriginal.Sexe;
             this.Actiu = PersonaOriginal.Actiu;
         }
+
+
+
     }
 }

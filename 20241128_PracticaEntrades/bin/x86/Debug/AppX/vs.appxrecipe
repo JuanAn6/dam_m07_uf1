@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6F910E4FB6E9976D303FE7F4DA8C6ACEC086B530AB8B275036AFFD51DCE293F7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>74166CA0AED3E0C1155A2FE5E8F5953CC1CD8E07BB1EA1FA69AE8DBFEF48895A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e6718b37-5139-4b80-a28f-402fdfe9050c_1.0.0.0_x86__dhwh0f9crhkwt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e6718b37-5139-4b80-a28f-402fdfe9050c_dhwh0f9crhkwt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e6718b37-5139-4b80-a28f-402fdfe9050c</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-15T14:48:43.772</Modified>
+      <Modified>2025-01-23T18:27:11.957</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\20241128_PracticaEntrades.exe">
       <PackagePath>entrypoint\20241128_PracticaEntrades.exe</PackagePath>
-      <Modified>2025-01-15T14:48:38.923</Modified>
+      <Modified>2025-01-23T18:27:10.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
@@ -48,7 +48,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2023-05-11T21:54:58.000</Modified>
+      <Modified>2024-02-21T19:52:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.3\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
@@ -106,47 +106,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\20241128_PracticaEntrades.xr.xml">
       <PackagePath>20241128_PracticaEntrades.xr.xml</PackagePath>
-      <Modified>2025-01-15T14:48:38.062</Modified>
+      <Modified>2025-01-23T18:14:07.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2025-01-15T14:48:38.186</Modified>
+      <Modified>2025-01-23T18:27:10.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioSala.xbf">
       <PackagePath>Views\EdicioSala.xbf</PackagePath>
-      <Modified>2025-01-15T14:48:38.188</Modified>
+      <Modified>2025-01-23T18:27:10.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EventsPage.xbf">
       <PackagePath>Views\EventsPage.xbf</PackagePath>
-      <Modified>2025-01-15T14:48:38.188</Modified>
+      <Modified>2025-01-23T18:27:10.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\HomePage.xbf">
       <PackagePath>Views\HomePage.xbf</PackagePath>
-      <Modified>2025-01-15T14:48:38.188</Modified>
+      <Modified>2025-01-23T18:27:10.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2025-01-15T14:48:38.188</Modified>
+      <Modified>2025-01-23T18:27:10.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\SalasPage.xbf">
       <PackagePath>Views\SalasPage.xbf</PackagePath>
-      <Modified>2025-01-15T14:48:38.188</Modified>
+      <Modified>2025-01-23T18:27:10.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22621.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
-      <Modified>2023-05-11T22:03:26.000</Modified>
+      <Modified>2024-02-21T19:53:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2023-05-12T00:38:22.000</Modified>
+      <Modified>2024-02-21T22:46:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-15T14:48:41.176</Modified>
+      <Modified>2025-01-22T19:03:45.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\20241128_PracticaEntrades.exe">
       <PackagePath>20241128_PracticaEntrades.exe</PackagePath>
-      <Modified>2025-01-15T14:48:43.761</Modified>
+      <Modified>2025-01-23T18:27:11.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
@@ -255,36 +255,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30704.0</Version>
+      <Version>14.0.33519.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30704.0</Version>
+      <Version>14.0.33519.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30704.0</Version>
+      <Version>14.0.33519.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30704.0</Version>
+      <Version>14.0.33519.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

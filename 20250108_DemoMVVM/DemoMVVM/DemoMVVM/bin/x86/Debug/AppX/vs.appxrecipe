@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-16T18:29:27.223</Modified>
+      <Modified>2025-01-20T18:27:38.485</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\DemoMVVM.exe">
       <PackagePath>entrypoint\DemoMVVM.exe</PackagePath>
-      <Modified>2025-01-16T18:29:26.345</Modified>
+      <Modified>2025-01-20T18:27:37.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
@@ -98,19 +98,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\DemoMVVM.xr.xml">
       <PackagePath>DemoMVVM.xr.xml</PackagePath>
-      <Modified>2025-01-16T18:25:58.996</Modified>
+      <Modified>2025-01-20T18:00:49.781</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2025-01-16T18:29:26.208</Modified>
+      <Modified>2025-01-20T18:27:37.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2025-01-16T18:29:26.208</Modified>
+      <Modified>2025-01-20T18:27:37.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\View\UCEditPersona.xbf">
       <PackagePath>View\UCEditPersona.xbf</PackagePath>
-      <Modified>2025-01-16T18:29:26.209</Modified>
+      <Modified>2025-01-20T18:27:37.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -122,7 +122,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20250108_DemoMVVM\DemoMVVM\DemoMVVM\bin\x86\Debug\Core\DemoMVVM.exe">
       <PackagePath>DemoMVVM.exe</PackagePath>
-      <Modified>2025-01-16T18:29:27.218</Modified>
+      <Modified>2025-01-20T18:27:38.481</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

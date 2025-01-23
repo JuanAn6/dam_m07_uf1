@@ -26,9 +26,9 @@
 
         </controls:DataGrid>
 
-        <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Margin="20" Click="{x:Bind viewModel.NewPerson}"></Button>
-        
-        <view:UCEditPersona Grid.Column="1" LaPersona="{Binding PersonaSeleccionada }" ></view:UCEditPersona>
+        <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Content="Text" Margin="20" Click="{x:Bind viewModel.NewPerson}"></Button>
+
+        <view:UCEditPersona Grid.Column="1" LaPersona="{Binding PersonaSeleccionada }" PersonaUpdated="{x:Bind viewModel.GetListPersones}" ></view:UCEditPersona>
         
     </Grid>
 </Page>

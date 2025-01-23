@@ -15,7 +15,7 @@ namespace _20241128_PracticaEntrades.Model
 
         private List<Zona> zones;
 
-        private int numColumnes, numFiles;
+        private int numColumnes, numFiles; //MAX ? 
         private bool teMapa;
 
         public Sala(long id, string nom, string adreca, string municipi, List<Zona> zones, int numColumnes, int numFiles, bool teMapa)

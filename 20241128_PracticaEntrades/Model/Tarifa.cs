@@ -11,7 +11,7 @@ namespace _20241128_PracticaEntrades.Model
         private string nom;
         private string desc;
         private decimal preu;
-        
+        private Event event_local;
         private Zona zona; // Si la zona es null es una tarifa general
 
     }

@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="_20241128_PracticaEntrades.Views.EdicioSala"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,18 +6,20 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                        
+    >
 
     <Grid ColumnSpacing="10" RowSpacing="10" Padding="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -26,9 +28,9 @@
         <Grid Grid.Column="0" Grid.Row="1" ColumnSpacing="10" RowSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -39,16 +41,137 @@
 
 
             <TextBlock Text="Nom: " Grid.Column="0" Grid.Row="1" />
-            <TextBox x:ConnectionId='2' x:Name="tb_nom" Grid.Column="1" Grid.Row="1" />
+            <TextBox x:ConnectionId='11' x:Name="tb_nom" Grid.Column="1" Grid.Row="1" />
 
             <TextBlock Text="Municipi: " Grid.Column="2" Grid.Row="1" />
-            <TextBox x:ConnectionId='3' x:Name="tb_municipi" Grid.Column="3" Grid.Row="1" />
+            <TextBox x:ConnectionId='12' x:Name="tb_municipi" Grid.Column="3" Grid.Row="1" />
 
             <TextBlock Text="Adreça: " Grid.Column="0" Grid.Row="2" />
-            <TextBox x:ConnectionId='4' x:Name="tb_adreca" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="4"/>
+            <TextBox x:ConnectionId='13' x:Name="tb_adreca" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"/>
 
 
         </Grid>
+        
+        <Grid Grid.Column="1" Grid.Row="1" ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="Zonas" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"></TextBlock>
+
+
+            <TextBlock Text="Zona: " Grid.Column="0" Grid.Row="1" />
+            <TextBox x:ConnectionId='5' x:Name="tb_zona_name" Grid.Column="1" Grid.Row="1" />
+
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20" 
+                        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Column="2" Grid.Row="1">
+
+                <!-- Button to Open Color Picker -->
+                <Button x:ConnectionId='8'
+                    Width="25"
+                    Height="25" 
+                    x:Name="OpenColorPickerButton"
+                    HorizontalAlignment="Center"
+                    >
+                    <Button.Flyout  >
+                        <Flyout Placement="Bottom" >
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter">
+                                    <Setter Property="Width" Value="300" />
+                                    <Setter Property="Padding" Value="20" />
+                                    <!--<Setter Property="CornerRadius" Value="10" />-->
+                                    <!--<Setter Property="Background" Value="White" />-->
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+
+                            <!-- Collapsible Color Picker -->
+                            <StackPanel>
+                                <ColorPicker x:ConnectionId='9'
+                                    x:Name="CustomColorPicker"
+                                    IsAlphaEnabled="False"
+                                    IsColorPreviewVisible="False"
+                                    IsHexInputVisible="False"
+                                    IsMoreButtonVisible="False" 
+                                    IsAlphaTextInputVisible="False"
+                                    IsColorChannelTextInputVisible="False"
+                                                                                 />
+
+                                <!-- Close Button -->
+                                <Button x:ConnectionId='10'
+                                    Content="Close"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,10,0,0"
+                                                              />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                
+            </StackPanel>
+
+
+            <Button Content="Add Zona" Grid.Column="3" Grid.Row="1"/>
+            
+
+            <TextBlock Text="Capacitat: " Grid.Column="0" Grid.Row="2" />
+            <TextBox x:ConnectionId='6' x:Name="tb_zona_capacitat" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
+
+            <TextBlock Text="Lista Zones: " Grid.Column="0" Grid.Row="3" />
+            <TextBlock x:ConnectionId='7' x:Name="tb_llista_zones" Text="contentLista!" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"  />
+            <Button Content="Eliminar" Grid.Column="3" Grid.Row="3"/>
+
+        </Grid>
+
+        <ScrollViewer Grid.Column="0" Grid.Row="3" HorizontalScrollBarVisibility="Auto">
+            <Grid x:ConnectionId='4' x:Name="grid_sala"  ColumnSpacing="6" RowSpacing="6" >
+                <!--<Canvas x:Name="canvas_sala" Background="LightGray"></Canvas>-->
+            </Grid>
+        </ScrollViewer>
+        <Grid Grid.Column="0" Grid.Row="4" ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Columns: " Grid.Column="0" />
+            <ComboBox x:ConnectionId='2' x:Name="tb_columns" Grid.Column="1"                                                     />
+            
+            <TextBlock Text="Rows: " Grid.Column="2" />
+            <ComboBox x:ConnectionId='3' x:Name="tb_rows" Grid.Column="3"                                                     />
+
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="3" ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Button Content="Paint" Grid.Row="0" />
+            <Button Content="Erase" Grid.Row="1" />
+
+        </Grid>
+
     </Grid>
 </Page>
 

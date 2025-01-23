@@ -6,7 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded"
+    >
 
     <Grid ColumnSpacing="10" RowSpacing="10" Padding="10">
         <Grid.ColumnDefinitions>
@@ -17,7 +19,7 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -26,9 +28,9 @@
         <Grid Grid.Column="0" Grid.Row="1" ColumnSpacing="10" RowSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -45,9 +47,130 @@
             <TextBox x:Name="tb_municipi" Grid.Column="3" Grid.Row="1" />
 
             <TextBlock Text="Adreça: " Grid.Column="0" Grid.Row="2" />
-            <TextBox x:Name="tb_adreca" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="4"/>
+            <TextBox x:Name="tb_adreca" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"/>
 
 
         </Grid>
+        
+        <Grid Grid.Column="1" Grid.Row="1" ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="Zonas" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"></TextBlock>
+
+
+            <TextBlock Text="Zona: " Grid.Column="0" Grid.Row="1" />
+            <TextBox x:Name="tb_zona_name" Grid.Column="1" Grid.Row="1" />
+
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20" 
+                        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Column="2" Grid.Row="1">
+
+                <!-- Button to Open Color Picker -->
+                <Button
+                    Width="25"
+                    Height="25" 
+                    x:Name="OpenColorPickerButton"
+                    HorizontalAlignment="Center"
+                    >
+                    <Button.Flyout  >
+                        <Flyout Placement="Bottom" >
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter">
+                                    <Setter Property="Width" Value="300" />
+                                    <Setter Property="Padding" Value="20" />
+                                    <!--<Setter Property="CornerRadius" Value="10" />-->
+                                    <!--<Setter Property="Background" Value="White" />-->
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+
+                            <!-- Collapsible Color Picker -->
+                            <StackPanel>
+                                <ColorPicker
+                                    x:Name="CustomColorPicker"
+                                    IsAlphaEnabled="False"
+                                    IsColorPreviewVisible="False"
+                                    IsHexInputVisible="False"
+                                    IsMoreButtonVisible="False" 
+                                    IsAlphaTextInputVisible="False"
+                                    IsColorChannelTextInputVisible="False"
+                                    ColorChanged="CustomColorPicker_ColorChanged"/>
+
+                                <!-- Close Button -->
+                                <Button
+                                    Content="Close"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,10,0,0"
+                                    Click="CloseFlyout_Click" />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                
+            </StackPanel>
+
+
+            <Button Content="Add Zona" Grid.Column="3" Grid.Row="1"/>
+            
+
+            <TextBlock Text="Capacitat: " Grid.Column="0" Grid.Row="2" />
+            <TextBox x:Name="tb_zona_capacitat" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
+
+            <TextBlock Text="Lista Zones: " Grid.Column="0" Grid.Row="3" />
+            <TextBlock x:Name="tb_llista_zones" Text="contentLista!" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"  />
+            <Button Content="Eliminar" Grid.Column="3" Grid.Row="3"/>
+
+        </Grid>
+
+        <ScrollViewer Grid.Column="0" Grid.Row="3" HorizontalScrollBarVisibility="Auto">
+            <Grid x:Name="grid_sala"  ColumnSpacing="6" RowSpacing="6" >
+                <!--<Canvas x:Name="canvas_sala" Background="LightGray"></Canvas>-->
+            </Grid>
+        </ScrollViewer>
+        <Grid Grid.Column="0" Grid.Row="4" ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Columns: " Grid.Column="0" />
+            <ComboBox x:Name="tb_columns" Grid.Column="1"  SelectionChanged="tb_columns_rows_SelectionChanged"/>
+            
+            <TextBlock Text="Rows: " Grid.Column="2" />
+            <ComboBox x:Name="tb_rows" Grid.Column="3"  SelectionChanged="tb_columns_rows_SelectionChanged"/>
+
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="3" ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Button Content="Paint" Grid.Row="0" />
+            <Button Content="Erase" Grid.Row="1" />
+
+        </Grid>
+
     </Grid>
 </Page>
