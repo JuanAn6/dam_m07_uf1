@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>20250203_ef_orm</id>
+    <version>1.0.0</version>
+    <authors>20250203_ef_orm</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="849cba64db9425216de9a58b80ae0d7b1915aae7" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\DAM2\M07\UF1\20250203_ef_orm\bin\Debug\net6.0-windows\20250203_ef_orm.runtimeconfig.json" target="lib\net6.0-windows7.0\20250203_ef_orm.runtimeconfig.json" />
+    <file src="C:\DAM2\M07\UF1\20250203_ef_orm\bin\Debug\net6.0-windows\20250203_ef_orm.dll" target="lib\net6.0-windows7.0\20250203_ef_orm.dll" />
+  </files>
+</package>

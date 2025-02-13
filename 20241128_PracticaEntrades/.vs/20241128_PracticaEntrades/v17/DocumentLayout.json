@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\eventspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\eventspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\eventspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\eventspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\eventdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\eventdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,10 +66,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
@@ -62,28 +74,74 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EdicioSala.xaml",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml",
-              "RelativeDocumentMoniker": "Views\\EdicioSala.xaml",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml",
-              "RelativeToolTip": "Views\\EdicioSala.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-23T16:23:28.024Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "EventDB.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\EventDB.cs",
+              "RelativeDocumentMoniker": "DB\\EventDB.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\EventDB.cs",
+              "RelativeToolTip": "DB\\EventDB.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAswBMBAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:20:39.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalaDB.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
+              "RelativeDocumentMoniker": "DB\\SalaDB.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
+              "RelativeToolTip": "DB\\SalaDB.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAwwPcAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:18:16.146Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EdicioSala.xaml.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\EdicioSala.xaml.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml.cs",
-              "RelativeToolTip": "Views\\EdicioSala.xaml.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAgwHUAAAA9AAAAAAAAAA==",
+              "Title": "EventsPage.xaml.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\EventsPage.xaml.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml.cs",
+              "RelativeToolTip": "Views\\EventsPage.xaml.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T16:27:31.372Z",
+              "WhenOpened": "2025-02-10T18:15:16.657Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventsPage.xaml",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml",
+              "RelativeDocumentMoniker": "Views\\EventsPage.xaml",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml",
+              "RelativeToolTip": "Views\\EventsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-10T18:14:11.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SalasPage.xaml",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml",
+              "RelativeDocumentMoniker": "Views\\SalasPage.xaml",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml",
+              "RelativeToolTip": "Views\\SalasPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-12T19:12:18.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalasPage.xaml.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\SalasPage.xaml.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml.cs",
+              "RelativeToolTip": "Views\\SalasPage.xaml.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA7wHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:30:48.953Z"
             }
           ]
         },

@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B45AA0-E7FD-45BD-A4DF-6B7DCFC65AAE}|Vista\\Vista.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\vista\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B45AA0-E7FD-45BD-A4DF-6B7DCFC65AAE}|Vista\\Vista.csproj|solutionrelative:vista\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B45AA0-E7FD-45BD-A4DF-6B7DCFC65AAE}|Vista\\Vista.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\vista\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F8B45AA0-E7FD-45BD-A4DF-6B7DCFC65AAE}|Vista\\Vista.csproj|solutionrelative:vista\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7861E2DA-96C9-42D1-8F74-38E1D050C5E3}|Lib.EF\\Lib.EF.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\lib.ef\\migrations\\20250206175618_projects-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7861E2DA-96C9-42D1-8F74-38E1D050C5E3}|Lib.EF\\Lib.EF.csproj|solutionrelative:lib.ef\\migrations\\20250206175618_projects-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7861E2DA-96C9-42D1-8F74-38E1D050C5E3}|Lib.EF\\Lib.EF.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\lib.ef\\service\\empresadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7861E2DA-96C9-42D1-8F74-38E1D050C5E3}|Lib.EF\\Lib.EF.csproj|solutionrelative:lib.ef\\service\\empresadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\lib.model\\model\\projecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|solutionrelative:lib.model\\model\\projecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\lib.model\\model\\empleat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|solutionrelative:lib.model\\model\\empleat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\lib.model\\lib.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|solutionrelative:lib.model\\lib.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|c:\\dam2\\m07\\uf1\\20250203_ef_orm\\lib.model\\model\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6531C4-1508-4C91-BA0B-6BBB7658BB8C}|Lib.Model\\Lib.Model.csproj|solutionrelative:lib.model\\model\\departament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 381,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:468822040:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1782758433:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:927045476:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1248672248:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250206175618_projects-migration.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.EF\\Migrations\\20250206175618_projects-migration.cs",
+              "RelativeDocumentMoniker": "Lib.EF\\Migrations\\20250206175618_projects-migration.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.EF\\Migrations\\20250206175618_projects-migration.cs",
+              "RelativeToolTip": "Lib.EF\\Migrations\\20250206175618_projects-migration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:56:19.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Projecte.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Model\\Projecte.cs",
+              "RelativeDocumentMoniker": "Lib.Model\\Model\\Projecte.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Model\\Projecte.cs",
+              "RelativeToolTip": "Lib.Model\\Model\\Projecte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:52:00.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Lib.Model",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Lib.Model.csproj",
+              "RelativeDocumentMoniker": "Lib.Model\\Lib.Model.csproj",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Lib.Model.csproj",
+              "RelativeToolTip": "Lib.Model\\Lib.Model.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-06T17:46:15.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Vista\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Vista\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Vista\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Vista\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwEEAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T19:43:33.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Vista\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Vista\\MainWindow.xaml",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Vista\\MainWindow.xaml",
+              "RelativeToolTip": "Vista\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-05T19:43:17.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpresaDBContext.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.EF\\Service\\EmpresaDBContext.cs",
+              "RelativeDocumentMoniker": "Lib.EF\\Service\\EmpresaDBContext.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.EF\\Service\\EmpresaDBContext.cs",
+              "RelativeToolTip": "Lib.EF\\Service\\EmpresaDBContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T19:38:04.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleat.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Model\\Empleat.cs",
+              "RelativeDocumentMoniker": "Lib.Model\\Model\\Empleat.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Model\\Empleat.cs",
+              "RelativeToolTip": "Lib.Model\\Model\\Empleat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:30:58.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Departament.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Model\\Departament.cs",
+              "RelativeDocumentMoniker": "Lib.Model\\Model\\Departament.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250203_ef_orm\\Lib.Model\\Model\\Departament.cs",
+              "RelativeToolTip": "Lib.Model\\Model\\Departament.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:30:54.172Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 19,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -20,6 +20,9 @@ using Windows.ApplicationModel.Activation;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using System.Diagnostics;
+using System.Collections.ObjectModel;
+using _20241128_PracticaEntrades.Model;
+
 
 
 
@@ -41,6 +44,7 @@ namespace _20241128_PracticaEntrades.Views
 
         public double CELL_SIZE = 20;
 
+        public ObservableCollection<ZonaView> list_zones = new ObservableCollection<ZonaView>();
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -58,6 +62,17 @@ namespace _20241128_PracticaEntrades.Views
 
 
             RenderBoxSalaGrid();
+
+
+            //Zones de exemple
+
+            list_zones.Clear();
+            list_zones.Add(new ZonaView(new Zona("Desc zona 1", "Zona 1", 1, 20, "#caa588")));
+            list_zones.Add(new ZonaView(new Zona("Desc zona 2", "Zona 2", 2, 20, "#88ca95")));
+            list_zones.Add(new ZonaView(new Zona("Desc zona 3", "Zona 3", 3, 20, "#88b9ca")));
+            list_zones.Add(new ZonaView(new Zona("Desc zona 4", "Zona 4", 4, 20, "#a788ca")));
+
+            tb_llista_zones.ItemsSource = list_zones;
         }
 
 
@@ -102,9 +117,11 @@ namespace _20241128_PracticaEntrades.Views
                     StackPanel b = new StackPanel();
                     b.Tapped += B_Tapped;
                     b.Background = new SolidColorBrush(Colors.Blue);
+                    b.Tag = new Point(row, col);
                     Grid.SetColumn(b, col);
                     Grid.SetRow(b, row);
                     grid_sala.Children.Add(b);
+                    
 
                 }
             }
@@ -117,6 +134,14 @@ namespace _20241128_PracticaEntrades.Views
             StackPanel b = sender as StackPanel;
             Color color = ((SolidColorBrush)OpenColorPickerButton.Background).Color;
             b.Background = new SolidColorBrush(color);
+
+            if(tb_llista_zones.SelectedItem != null)
+            {
+                Point p = (Point)b.Tag;
+                ((ZonaView)tb_llista_zones.SelectedItem).Cadires.Add(new Cadira((int)p.X, (int)p.Y));
+            }
+
+
         }
 
         private void tb_columns_rows_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -139,7 +164,27 @@ namespace _20241128_PracticaEntrades.Views
             Color c = sender.Color;
             Debug.WriteLine(c.ToString());
 
-            OpenColorPickerButton.Background = new SolidColorBrush(c);
+            //OpenColorPickerButton.Background = new SolidColorBrush(c);
+        }
+
+        private void tb_llista_zones_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            OpenColorPickerButton.Background = ((ZonaView)tb_llista_zones.SelectedItem).SolidColor;
+        }
+
+        private void Button_Save_Click(object sender, RoutedEventArgs e)
+        {
+
+            List<Zona> list = new List<Zona>();
+            foreach(Zona z in list_zones)
+            {
+                list.Add(z);
+                Debug.WriteLine("Zones: " + z.ToString());
+            }
+
+            Sala sala_save = new Sala(tb_nom.Text, tb_adreca.Text, tb_municipi.Text, (int)tb_columns.SelectedItem, (int)tb_rows.SelectedItem, true, list);
+
+            Debug.WriteLine(sala_save.ToString());
         }
     }
 }

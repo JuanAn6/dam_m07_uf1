@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
-    xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
+    xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives" xmlns:usercontrols="using:_20241128_PracticaEntrades.UserControls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="Page_Loaded">
@@ -18,9 +18,10 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="10*"></RowDefinition>
-            <RowDefinition Height="10*"></RowDefinition>
-            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
 
 
@@ -32,8 +33,8 @@
                 <ColumnDefinition Width="5*"></ColumnDefinition>
                 <ColumnDefinition Width="5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox PlaceholderText="Search..."  Grid.Column="0" Margin="5"/>
-            <Button Width="50" Height="50" Grid.Column="1" >
+            <TextBox PlaceholderText="Search..."  Grid.Column="0" Margin="5" x:Name="tb_search"/>
+            <Button Width="50" Height="50" Grid.Column="1" Click="Button_Click_Search">
                 <FontIcon Glyph="&#59166;"/>
             </Button>
             <Button Width="50" Height="50" Grid.Column="2" HorizontalAlignment="Right">
@@ -77,5 +78,15 @@
             </controls:DataGrid.Columns>
 
         </controls:DataGrid>
+
+        <usercontrols:PaginationControl
+            PageChanged="pgc_PageChanged"
+            x:Name="pgc"
+            Grid.Column="0" 
+            Grid.Row="3"
+            ></usercontrols:PaginationControl>
+
     </Grid>
+
+    
 </Page>

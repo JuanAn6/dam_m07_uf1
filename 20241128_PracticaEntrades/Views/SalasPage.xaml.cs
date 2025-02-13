@@ -1,7 +1,12 @@
 ﻿using _20241128_PracticaEntrades.Model;
 using _20241128_PracticaEntrades.Views;
+using DB;
+using Microsoft.Toolkit.Uwp.UI.Controls;
+using Model.model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -27,25 +32,34 @@ namespace _20241128_PracticaEntrades
 
 
 
-        private List<Sala> Sales
+        public string SearchFilter
         {
-            get { return (List<Sala>)GetValue(SalesProperty); }
+            get { return (string)GetValue(SearchFilterProperty); }
+            set { SetValue(SearchFilterProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for SearchFilter.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty SearchFilterProperty =
+            DependencyProperty.Register("SearchFilter", typeof(string), typeof(SalasPage), new PropertyMetadata(""));
+
+
+
+        private ObservableCollection<Sala> Sales
+        {
+            get { return (ObservableCollection<Sala>)GetValue(SalesProperty); }
             set { SetValue(SalesProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for Sales.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty SalesProperty =
-            DependencyProperty.Register("Sales", typeof(List<Sala>), typeof(SalasPage), new PropertyMetadata(new List<Sala>()));
+            DependencyProperty.Register("Sales", typeof(ObservableCollection<Sala>), typeof(SalasPage), new PropertyMetadata(new ObservableCollection<Sala>()));
 
-
+        int ItemsPerPage = 5;
         public SalasPage()
         {
             this.InitializeComponent();
 
-            Sales.Clear();
-
-            Sales.Add(new Sala(1, "La Sala", "Cal font", "Igualada", new List<Zona>() , 10, 10, true));
-            Sales.Add(new Sala(2, "Downtown", "Zona uni", "Barcelona", new List<Zona>() , 20, 20, true));
+            LoadSalesList();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -58,6 +72,63 @@ namespace _20241128_PracticaEntrades
         {
             Frame frm = this.Parent as Frame;
             frm.Navigate(typeof(EdicioSala));
+        }
+
+        private void pgc_PageChanged(UserControls.PaginationControl sender, EventArgs args)
+        {
+            LoadSalesList();
+        }
+
+        
+
+        private void LoadSalesList()
+        {
+            Sales.Clear();
+
+            //Sales.Add(new Sala(1, "La Sala", "Cal font", "Igualada", new List<Zona>() , 10, 10, true));
+            //Sales.Add(new Sala(2, "Downtown", "Zona uni", "Barcelona", new List<Zona>() , 20, 20, true));
+
+            long num_sales = 0;
+            if (SearchFilter.Equals(""))
+            {
+                num_sales = SalaDB.CountSalas();
+            }
+            else
+            {
+                num_sales = SalaDB.CountSalasFiltered(SearchFilter);
+            }
+
+            int numPage = (int)MathF.Ceiling(num_sales / (float)ItemsPerPage);
+
+            pgc.MaxPage = numPage;
+            pgc.MinPage = 1;
+
+            pgc.CurrentPage = Math.Min(pgc.CurrentPage, numPage);
+
+            
+            List<Sala> sales = null;
+            
+            if (SearchFilter.Equals(""))
+            {
+                sales = SalaDB.GetSalasPage(pgc.CurrentPage, ItemsPerPage);
+            }
+            else
+            {
+                sales = SalaDB.GetSalasPageFiltered(pgc.CurrentPage, ItemsPerPage, SearchFilter);
+            }
+
+
+            foreach (Sala s in sales)
+            {
+                Sales.Add(s);
+            }
+
+        }
+
+        private void Button_Click_Search(object sender, RoutedEventArgs e)
+        {
+            SearchFilter = tb_search.Text;
+            LoadSalesList();
         }
     }
 }

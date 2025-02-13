@@ -22,7 +22,6 @@ C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\App.xbf
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\MainPage.xbf
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\XamlSaveStateFile.xml
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.CoreCompileInputs.cache
-C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.CopyComplete
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.exe
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.pdb
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\ResourceHandlingTask.state
@@ -101,3 +100,5 @@ C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.g.i.cs
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.g.cs
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.xaml
 C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\View\PaginationControl.xbf
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\BDDemo.csproj.Up2Date
+C:\DAM2\M07\UF1\BDDemo\BDDemo\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638441419520000000.json

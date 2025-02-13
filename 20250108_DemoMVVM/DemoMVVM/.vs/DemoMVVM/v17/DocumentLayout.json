@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|c:\\dam2\\m07\\uf1\\20250108_demomvvm\\demomvvm\\demomvvm\\viewmodel\\personaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|solutionrelative:demomvvm\\viewmodel\\personaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\demomvvm\\view\\uceditpersona.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|solutionrelative:demomvvm\\view\\uceditpersona.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\demomvvm\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|solutionrelative:demomvvm\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\demomvvm\\viewmodel\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|solutionrelative:demomvvm\\viewmodel\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\demomvvm\\model\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|solutionrelative:demomvvm\\model\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\demomvvm\\view\\transformers\\sexeradiotransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E77315E-9617-465B-89C8-AEADBCD61F13}|DemoMVVM\\DemoMVVM.csproj|solutionrelative:demomvvm\\view\\transformers\\sexeradiotransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 381,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:468822040:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1782758433:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:927045476:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1248672248:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\Model\\Persona.cs",
+              "RelativeDocumentMoniker": "DemoMVVM\\Model\\Persona.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\Model\\Persona.cs",
+              "RelativeToolTip": "DemoMVVM\\Model\\Persona.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwBkAAABpAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVDhP7ZNNSBRhGMf/7zuz66gzuequXwgKm\u002BtHkIibdEgEDe1QCCEEKaKXhE75QXnIUjwJ5uIhkAiDEDvkQVTELQ8aHlTm4iorrhqLlrq6m7vtau7OzE6nERU8RTd/pwee//Pjgfd9gCv\u002BFUYrVjwrfMWjimRdsU6QbkuCsdwo5N/PF0pqSvTOcecfAPD7/Yl8GZ/ouu7SB2YC4ba2NtNWwdY15aaCg9mDCABQTRg5jjSBgSjrZZGlrChHZZFQIrIMa9MyChQbS1mRYzlbKBQyhqPhKR10YpgJN2kZAgAOt6PDvmGvW9pZsnAMh4LUAvAxPOSojLAcnmgsbqxXoNj65/rvzW7OproP3R6O5RxFmUWl6wfr3OHxoYsSOrTxaqObAsD8j/lbbp/boqoqqixVocKMwjdFGUVdOcacrjQ\u002B7VNCQoIUVaPL6UJ6wMSbQAgJxOnjHHmmPEmIEQCCHQCb2paoeV8z9vjDY7VrossTDAY/\u002Bv3\u002BpNPmGXy/fWM9X3pUc7d5fD\u002B0n\u002B4L\u002BH42DDWo5m5zp5ahALDmXYOe1cMQZ1gUBKHeYDD8OitSVZUGg8EUb8jLHUWOABXcwNxAiifoYSJKBASEz3ydmXQqlBUZAMBS9qznFO0B\u002Br71lY44RiBFpTuD84P22uFao7gtQokqTziWs0ETZidm40Q\u002BgWPPcdEFAIiPjw9AxYvqG9WOMnMZWMouW0yW5\u002B3l7YFcUy4ooROEkLcAwAJAZV4lnHtOuPZdlubPzZ2VeZXg9Ty8IS92g7suSukwgK8\u002Bv8\u002B4tLOUS0Fd9qf2Ma/fa5pcnRRAMLP\u002Bcn0R2rdZ\u002BL7QMeWcqlvxrFiS4pKQn5KPWF0spKiEiByZaLnb8uDC0pdCtGJ6dbrV7XO3ji6PYjuwDYYyMCebkZWYNd37sLf\u002B/NjlnF4KB\u002B4dACuVqZUSalVV1cqojFWRlGfnR6743/wF2Ocp0aqGDqUAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-01-08T19:59:59.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UCEditPersona.xaml.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\View\\UCEditPersona.xaml.cs",
+              "RelativeDocumentMoniker": "DemoMVVM\\View\\UCEditPersona.xaml.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\View\\UCEditPersona.xaml.cs",
+              "RelativeToolTip": "DemoMVVM\\View\\UCEditPersona.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwDsAAAA6AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVDhP7ZRBiBJRAIZ/x9HZVRvTgbVSWKLXxjJChy1JklgIEmLx4C0hOobH7rFE56CrLOzFQ908KFFzCEYC5xKdbG8dBJWGBbdxUldn5k0nh6cgCO2hQx/M4Z/vfz8zcxgfGF7XTg42eL6xezUMP\u002BcWHu\u002BlGqxfB44NuwkRV6ICjr/8xPfe5OXHb70nrF8HH54qr\u002BZBToZvytfCpc8nZ3hwK4qHO5vqNv3RrFar3gGe50EIQaFQMKfT6VEulzM9CYCH69ubB304S2zwHM5tilPTgsCH9\u002BOR\u002BL4sy96BwWCA8XiMTqczSCQSp5qmKdlsVp97n9cE8OFr98A8dxpvPnVRureFvBzFVsSH2WzmdRRFgaIoEEURxWIRkUjkWSwWq6XT6d9Y/obt3hi9XzO8eJRCPh2FFAIsy2IrAADXdWGaJmq1GnRdfzuZTJ7P3cJgJmkjkwQy1zdxWXDhUgeu67IVD0ophsMhNE2L1\u002Bv1S/P7frZ0/87tndGZXrqxnQLv50ApZbWHJEkghIAQgn6/j26322y32yqWn1BVVbRaLYxGo5VjhBDk83nvkiQJtm17fmHQcRxYlrXyNddhYfAi\u002BD/49/z7gzwbgsEgOI5Ds9mEIAisWolhGAiFQl5e\u002BNuUy\u002BW7lNJDwzDgOA6rViKKIgKBwPtKpfJu2V0IfwDhDrtncQ2YqQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-01-09T16:51:33.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaViewModel.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\ViewModel\\PersonaViewModel.cs",
+              "RelativeDocumentMoniker": "DemoMVVM\\ViewModel\\PersonaViewModel.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\ViewModel\\PersonaViewModel.cs",
+              "RelativeToolTip": "DemoMVVM\\ViewModel\\PersonaViewModel.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAAMQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T16:18:11.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPageViewModel.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\ViewModel\\MainPageViewModel.cs",
+              "RelativeDocumentMoniker": "DemoMVVM\\ViewModel\\MainPageViewModel.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\ViewModel\\MainPageViewModel.cs",
+              "RelativeToolTip": "DemoMVVM\\ViewModel\\MainPageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAbAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVDhP7ZNNSBRhGMf/7zuz66gzuequXwgKm\u002BtHkIibdEgEDe1QCCEEKaKXhE75QXnIUjwJ5uIhkAiDEDvkQVTELQ8aHlTm4iorrhqLlrq6m7vtau7OzE6nERU8RTd/pwee//Pjgfd9gCv\u002BFUYrVjwrfMWjimRdsU6QbkuCsdwo5N/PF0pqSvTOcecfAPD7/Yl8GZ/ouu7SB2YC4ba2NtNWwdY15aaCg9mDCABQTRg5jjSBgSjrZZGlrChHZZFQIrIMa9MyChQbS1mRYzlbKBQyhqPhKR10YpgJN2kZAgAOt6PDvmGvW9pZsnAMh4LUAvAxPOSojLAcnmgsbqxXoNj65/rvzW7OproP3R6O5RxFmUWl6wfr3OHxoYsSOrTxaqObAsD8j/lbbp/boqoqqixVocKMwjdFGUVdOcacrjQ\u002B7VNCQoIUVaPL6UJ6wMSbQAgJxOnjHHmmPEmIEQCCHQCb2paoeV8z9vjDY7VrossTDAY/\u002Bv3\u002BpNPmGXy/fWM9X3pUc7d5fD\u002B0n\u002B4L\u002BH42DDWo5m5zp5ahALDmXYOe1cMQZ1gUBKHeYDD8OitSVZUGg8EUb8jLHUWOABXcwNxAiifoYSJKBASEz3ydmXQqlBUZAMBS9qznFO0B\u002Br71lY44RiBFpTuD84P22uFao7gtQokqTziWs0ETZidm40Q\u002BgWPPcdEFAIiPjw9AxYvqG9WOMnMZWMouW0yW5\u002B3l7YFcUy4ooROEkLcAwAJAZV4lnHtOuPZdlubPzZ2VeZXg9Ty8IS92g7suSukwgK8\u002Bv8\u002B4tLOUS0Fd9qf2Ma/fa5pcnRRAMLP\u002Bcn0R2rdZ\u002BL7QMeWcqlvxrFiS4pKQn5KPWF0spKiEiByZaLnb8uDC0pdCtGJ6dbrV7XO3ji6PYjuwDYYyMCebkZWYNd37sLf\u002B/NjlnF4KB\u002B4dACuVqZUSalVV1cqojFWRlGfnR6743/wF2Ocp0aqGDqUAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-01-08T20:14:49.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\View\\MainPage.xaml",
+              "RelativeDocumentMoniker": "DemoMVVM\\View\\MainPage.xaml",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\View\\MainPage.xaml",
+              "RelativeToolTip": "DemoMVVM\\View\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-08T20:06:12.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SexeRadioTransform.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\View\\Transformers\\SexeRadioTransform.cs",
+              "RelativeDocumentMoniker": "DemoMVVM\\View\\Transformers\\SexeRadioTransform.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20250108_DemoMVVM\\DemoMVVM\\DemoMVVM\\View\\Transformers\\SexeRadioTransform.cs",
+              "RelativeToolTip": "DemoMVVM\\View\\Transformers\\SexeRadioTransform.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACoAAAAbAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVDhP7ZNNSBRhGMf/7zuz66gzuequXwgKm\u002BtHkIibdEgEDe1QCCEEKaKXhE75QXnIUjwJ5uIhkAiDEDvkQVTELQ8aHlTm4iorrhqLlrq6m7vtau7OzE6nERU8RTd/pwee//Pjgfd9gCv\u002BFUYrVjwrfMWjimRdsU6QbkuCsdwo5N/PF0pqSvTOcecfAPD7/Yl8GZ/ouu7SB2YC4ba2NtNWwdY15aaCg9mDCABQTRg5jjSBgSjrZZGlrChHZZFQIrIMa9MyChQbS1mRYzlbKBQyhqPhKR10YpgJN2kZAgAOt6PDvmGvW9pZsnAMh4LUAvAxPOSojLAcnmgsbqxXoNj65/rvzW7OproP3R6O5RxFmUWl6wfr3OHxoYsSOrTxaqObAsD8j/lbbp/boqoqqixVocKMwjdFGUVdOcacrjQ\u002B7VNCQoIUVaPL6UJ6wMSbQAgJxOnjHHmmPEmIEQCCHQCb2paoeV8z9vjDY7VrossTDAY/\u002Bv3\u002BpNPmGXy/fWM9X3pUc7d5fD\u002B0n\u002B4L\u002BH42DDWo5m5zp5ahALDmXYOe1cMQZ1gUBKHeYDD8OitSVZUGg8EUb8jLHUWOABXcwNxAiifoYSJKBASEz3ydmXQqlBUZAMBS9qznFO0B\u002Br71lY44RiBFpTuD84P22uFao7gtQokqTziWs0ETZidm40Q\u002BgWPPcdEFAIiPjw9AxYvqG9WOMnMZWMouW0yW5\u002B3l7YFcUy4ooROEkLcAwAJAZV4lnHtOuPZdlubPzZ2VeZXg9Ty8IS92g7suSukwgK8\u002Bv8\u002B4tLOUS0Fd9qf2Ma/fa5pcnRRAMLP\u002Bcn0R2rdZ\u002BL7QMeWcqlvxrFiS4pKQn5KPWF0spKiEiByZaLnb8uDC0pdCtGJ6dbrV7XO3ji6PYjuwDYYyMCebkZWYNd37sLf\u002B/NjlnF4KB\u002B4dACuVqZUSalVV1cqojFWRlGfnR6743/wF2Ocp0aqGDqUAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-01-09T18:19:03.87Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 19,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
