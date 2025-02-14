@@ -54,7 +54,7 @@ namespace _20241128_PracticaEntrades
         public static readonly DependencyProperty SalesProperty =
             DependencyProperty.Register("Sales", typeof(ObservableCollection<Sala>), typeof(SalasPage), new PropertyMetadata(new ObservableCollection<Sala>()));
 
-        int ItemsPerPage = 5;
+        int ItemsPerPage = 10;
         public SalasPage()
         {
             this.InitializeComponent();
@@ -72,6 +72,26 @@ namespace _20241128_PracticaEntrades
         {
             Frame frm = this.Parent as Frame;
             frm.Navigate(typeof(EdicioSala));
+        }
+
+        private void Button_Edit_Click(object sender, RoutedEventArgs e)
+        {
+
+            if ()
+            {
+                Frame frm = this.Parent as Frame;
+                frm.Navigate(typeof(EdicioSala), );
+            }
+        }
+
+        private void Button_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if(dgSales.SelectedItem != null)
+            {
+                Sala s = dgSales.SelectedItem as Sala;
+                SalaDB.DeleteSala(s.Id);
+                LoadSalesList();
+            }
         }
 
         private void pgc_PageChanged(UserControls.PaginationControl sender, EventArgs args)

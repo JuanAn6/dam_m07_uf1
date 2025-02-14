@@ -10,7 +10,7 @@ namespace _20241128_PracticaEntrades.Model
     public class Sala : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private long id;
+        private int id;
         private string nom;
         private string adreca;
         private string municipi;
@@ -20,7 +20,7 @@ namespace _20241128_PracticaEntrades.Model
         private int numColumnes, numFiles; //MAX ? 
         private bool teMapa;
 
-        public Sala(long id, string nom, string adreca, string municipi, List<Zona> zones, int numColumnes, int numFiles, bool teMapa)
+        public Sala(int id, string nom, string adreca, string municipi, List<Zona> zones, int numColumnes, int numFiles, bool teMapa)
         {
             this.Id = id;
             this.Nom = nom;
@@ -33,7 +33,7 @@ namespace _20241128_PracticaEntrades.Model
 
         }
 
-        public long Id { get => id; set => id = value; }
+        public int Id { get => id; set => id = value; }
         public string Nom { get => nom; set => nom = value; }
         public string Adreca { get => adreca; set => adreca = value; }
         public string Municipi { get => municipi; set => municipi = value; }

@@ -32,22 +32,26 @@
                 <ColumnDefinition Width="10*"></ColumnDefinition>
                 <ColumnDefinition Width="5*"></ColumnDefinition>
                 <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBox PlaceholderText="Search..."  Grid.Column="0" Margin="5" x:Name="tb_search"/>
             <Button Width="50" Height="50" Grid.Column="1" Click="Button_Click_Search">
                 <FontIcon Glyph="&#59166;"/>
             </Button>
-            <Button Width="50" Height="50" Grid.Column="2" HorizontalAlignment="Right">
+            <Button Width="50" Height="50" Grid.Column="2" HorizontalAlignment="Right" Click="Button_Delete_Click">
                 <FontIcon Glyph="&#59213;"/>
             </Button>
             <Button Width="50" Height="50" Grid.Column="3" HorizontalAlignment="Right" Click="Button_New_Click">
                 <FontIcon Glyph="&#59152;"/>
             </Button>
+            <Button Width="50" Height="50" Grid.Column="4" HorizontalAlignment="Right" Click="Button_Edit_Click">
+                <FontIcon Glyph="&#59151;"/>
+            </Button>
         </Grid>
         
         <controls:DataGrid
         Grid.Row="2"
-        x:Name="dgEvents" 
+        x:Name="dgSales" 
         GridLinesVisibility="All"
         AlternatingRowBackground="#444444"
         HeadersVisibility="Column"

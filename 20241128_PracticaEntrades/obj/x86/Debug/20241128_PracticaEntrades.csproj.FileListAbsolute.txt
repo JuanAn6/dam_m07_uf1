@@ -127,3 +127,8 @@ C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\UserControls\PaginationC
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\UserControls\PaginationControl.xaml
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\UserControls\PaginationControl.xbf
 C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\UserControls\PaginationControl.xbf
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioEvent.g.i.cs
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioEvent.g.cs
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioEvent.xaml
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\obj\x86\Debug\Views\EdicioEvent.xbf
+C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioEvent.xbf

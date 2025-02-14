@@ -12,7 +12,7 @@ namespace _20241128_PracticaEntrades.Model
         public event PropertyChangedEventHandler PropertyChanged;
 
         private TipusEvent tipus;
-        private long id;
+        private int id;
         private string nom;
         private string protagonista;
         private string desc;
@@ -22,7 +22,7 @@ namespace _20241128_PracticaEntrades.Model
         private Sala sala;
         private List<Tarifa> tarifes;
 
-        public Event(TipusEvent tipus, long id, string nom, string protagonista, string desc, string imgPath, DateTime data, Estat estat, Sala sala, List<Tarifa> tarifes)
+        public Event(TipusEvent tipus, int id, string nom, string protagonista, string desc, string imgPath, DateTime data, Estat estat, Sala sala, List<Tarifa> tarifes)
         {
             this.tipus = tipus;
             this.id = id;
@@ -37,7 +37,7 @@ namespace _20241128_PracticaEntrades.Model
         }
 
         public TipusEvent Tipus { get => tipus; set => tipus = value; }
-        public long Id { get => id; set => id = value; }
+        public int Id { get => id; set => id = value; }
         public string Nom { get => nom; set => nom = value; }
         public string Protagonista { get => protagonista; set => protagonista = value; }
         public string Desc { get => desc; set => desc = value; }

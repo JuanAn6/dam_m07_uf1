@@ -169,6 +169,9 @@
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\UserControls\UCZona.xbf">
       <PackagePath>UserControls\UCZona.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioEvent.xbf">
+      <PackagePath>Views\EdicioEvent.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioSala.xbf">
       <PackagePath>Views\EdicioSala.xbf</PackagePath>
     </AppxPackagedFile>

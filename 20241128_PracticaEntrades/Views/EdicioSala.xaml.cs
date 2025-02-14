@@ -46,6 +46,18 @@ namespace _20241128_PracticaEntrades.Views
 
         public ObservableCollection<ZonaView> list_zones = new ObservableCollection<ZonaView>();
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            if (e.Parameter != null)
+            {
+                //recojer el parametro y hacer la query para popular todos lo campos
+                //Crear un objeto para gestionar el formulario ?
+            }
+        }
+
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             

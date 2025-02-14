@@ -1,5 +1,6 @@
 ﻿
 using _20241128_PracticaEntrades.Model;
+using _20241128_PracticaEntrades.Views;
 using DB;
 using System;
 using System.Collections.Generic;
@@ -119,6 +120,7 @@ namespace _20241128_PracticaEntrades
 
             foreach (Event e in events)
             {
+                Debug.WriteLine("NomSala: "+e.Sala?.Nom);
                 Events.Add(e);
             }
 
@@ -131,5 +133,23 @@ namespace _20241128_PracticaEntrades
             SearchFilter = tb_search.Text;
             LoadEventsList();
         }
+
+        private void Button_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgEvents.SelectedItem != null)
+            {
+                Event ev = dgEvents.SelectedItem as Event;
+                EventDB.DeleteEvent(ev.Id);
+                LoadEventsList();
+            }
+        }
+
+        private void Button_New_Click(object sender, RoutedEventArgs e)
+        {
+            Frame frm = this.Parent as Frame;
+            frm.Navigate(typeof(EdicioEvent));
+        }
+
+        
     }
 }

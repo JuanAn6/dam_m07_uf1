@@ -126,6 +126,9 @@
     <Compile Include="UserControls\UCZona.xaml.cs">
       <DependentUpon>UCZona.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\EdicioEvent.xaml.cs">
+      <DependentUpon>EdicioEvent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EdicioSala.xaml.cs">
       <DependentUpon>EdicioSala.xaml</DependentUpon>
     </Compile>
@@ -172,6 +175,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\UCZona.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EdicioEvent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

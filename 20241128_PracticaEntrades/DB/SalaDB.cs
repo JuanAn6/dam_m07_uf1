@@ -50,7 +50,7 @@ namespace DB
                     using (var consulta = connexio.CreateCommand())
                     {
                         // query SQL
-                        consulta.CommandText = @"delete from Sala where id = @id";
+                        consulta.CommandText = @"delete from sala where id = @id";
 
                         //Necessari per que la consulta estigui en la transacció
                         consulta.Transaction = trans;
@@ -74,8 +74,9 @@ namespace DB
                             }
 
                         }
-                        catch (Exception)
+                        catch (Exception e)
                         {
+                            Debug.WriteLine(e);
                             trans.Rollback();
                         }
 

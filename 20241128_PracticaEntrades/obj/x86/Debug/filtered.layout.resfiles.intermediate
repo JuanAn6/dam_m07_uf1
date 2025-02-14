@@ -13,6 +13,7 @@ App.xbf
 MainPage.xbf
 UserControls\PaginationControl.xbf
 UserControls\UCZona.xbf
+Views\EdicioEvent.xbf
 Views\EdicioSala.xbf
 Views\EventsPage.xbf
 Views\HomePage.xbf
