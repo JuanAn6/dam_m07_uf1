@@ -77,10 +77,11 @@ namespace _20241128_PracticaEntrades
         private void Button_Edit_Click(object sender, RoutedEventArgs e)
         {
 
-            if ()
+            Sala s = dgSales.SelectedItem as Sala;
+            if (s != null)
             {
                 Frame frm = this.Parent as Frame;
-                frm.Navigate(typeof(EdicioSala), );
+                frm.Navigate(typeof(EdicioSala), s);
             }
         }
 

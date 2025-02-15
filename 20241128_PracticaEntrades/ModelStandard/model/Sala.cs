@@ -40,7 +40,7 @@ namespace _20241128_PracticaEntrades.Model
         public int NumColumnes { get => numColumnes; set => numColumnes = value; }
         public int NumFiles { get => numFiles; set => numFiles = value; }
         public bool TeMapa { get => teMapa; set => teMapa = value; }
-        internal List<Zona> Zones { get => zones; set => zones = value; }
+        public List<Zona> Zones { get => zones; set => zones = value; }
 
         public Sala(string nom, string adreca, string municipi, int numColumnes, int numFiles, bool teMapa, List<Zona> zones)
         {

@@ -22,6 +22,7 @@ using Microsoft.UI.Xaml.Media;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
 using _20241128_PracticaEntrades.Model;
+using DB;
 
 
 
@@ -46,6 +47,8 @@ namespace _20241128_PracticaEntrades.Views
 
         public ObservableCollection<ZonaView> list_zones = new ObservableCollection<ZonaView>();
 
+        private Color SelectedColor;
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -54,6 +57,11 @@ namespace _20241128_PracticaEntrades.Views
             {
                 //recojer el parametro y hacer la query para popular todos lo campos
                 //Crear un objeto para gestionar el formulario ?
+
+                Sala s = e.Parameter as Sala;
+
+                Debug.WriteLine("Sala edit: " + s);
+            
             }
         }
 
@@ -79,10 +87,10 @@ namespace _20241128_PracticaEntrades.Views
             //Zones de exemple
 
             list_zones.Clear();
-            list_zones.Add(new ZonaView(new Zona("Desc zona 1", "Zona 1", 1, 20, "#caa588")));
-            list_zones.Add(new ZonaView(new Zona("Desc zona 2", "Zona 2", 2, 20, "#88ca95")));
-            list_zones.Add(new ZonaView(new Zona("Desc zona 3", "Zona 3", 3, 20, "#88b9ca")));
-            list_zones.Add(new ZonaView(new Zona("Desc zona 4", "Zona 4", 4, 20, "#a788ca")));
+            //list_zones.Add(new ZonaView(new Zona("Desc zona 1", "Zona 1", 1, 20, "#caa588")));
+            //list_zones.Add(new ZonaView(new Zona("Desc zona 2", "Zona 2", 2, 20, "#88ca95")));
+            //list_zones.Add(new ZonaView(new Zona("Desc zona 3", "Zona 3", 3, 20, "#88b9ca")));
+            //list_zones.Add(new ZonaView(new Zona("Desc zona 4", "Zona 4", 4, 20, "#a788ca")));
 
             tb_llista_zones.ItemsSource = list_zones;
         }
@@ -170,13 +178,13 @@ namespace _20241128_PracticaEntrades.Views
 
         }
 
-
+        
         private void CustomColorPicker_ColorChanged(Windows.UI.Xaml.Controls.ColorPicker sender, Windows.UI.Xaml.Controls.ColorChangedEventArgs args)
         {
             Color c = sender.Color;
             Debug.WriteLine(c.ToString());
-
-            //OpenColorPickerButton.Background = new SolidColorBrush(c);
+            SelectedColor = c;
+            OpenColorPickerButton.Background = new SolidColorBrush(c);
         }
 
         private void tb_llista_zones_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -197,6 +205,35 @@ namespace _20241128_PracticaEntrades.Views
             Sala sala_save = new Sala(tb_nom.Text, tb_adreca.Text, tb_municipi.Text, (int)tb_columns.SelectedItem, (int)tb_rows.SelectedItem, true, list);
 
             Debug.WriteLine(sala_save.ToString());
+
+            SalaDB.insertSala(sala_save);
+
         }
+
+        private void Button_Click_Add_Zona(object sender, RoutedEventArgs e)
+        {
+            
+            int capacitat = -1;
+            
+            Int32.TryParse(tb_zona_capacitat.Text, out capacitat);
+
+            int num = -1;
+            if(list_zones.Count() > 0)
+            {
+                num = list_zones.Last().Numero + 1;
+            }
+
+            Debug.WriteLine("Color: " + SelectedColor.ToString());
+
+            string color = SelectedColor.ToString();
+
+            Zona z = new Zona("", tb_zona_name.Text, num, capacitat, color);
+            ZonaView zv = new ZonaView(z);
+
+            list_zones.Add(zv);
+
+        }
+
+        
     }
 }

@@ -121,7 +121,7 @@
             </StackPanel>
 
 
-            <Button Content="Add Zona" Grid.Column="3" Grid.Row="1"/>
+            <Button Content="Add Zona" Grid.Column="3" Grid.Row="1" Click="Button_Click_Add_Zona" />
             
 
             <TextBlock Text="Capacitat: " Grid.Column="0" Grid.Row="2" />

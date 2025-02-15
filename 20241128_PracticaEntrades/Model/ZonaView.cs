@@ -25,9 +25,9 @@ namespace _20241128_PracticaEntrades.Model
                 String c_s = base.Color;
                 Windows.UI.Color c = ColorHelper.FromArgb(
                             255, // Opacidad (Alpha)
-                            Convert.ToByte(c_s.Substring(1, 2), 16), // Rojo
-                            Convert.ToByte(c_s.Substring(3, 2), 16), // Verde
-                            Convert.ToByte(c_s.Substring(5, 2), 16)  // Azul
+                            Convert.ToByte(c_s.Substring(2, 2), 16), // Rojo
+                            Convert.ToByte(c_s.Substring(4, 2), 16), // Verde
+                            Convert.ToByte(c_s.Substring(6, 2), 16)  // Azul
                         ); ;
                 return new SolidColorBrush(c); 
             }

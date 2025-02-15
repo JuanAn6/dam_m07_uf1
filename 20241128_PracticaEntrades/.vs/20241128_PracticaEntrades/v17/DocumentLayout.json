@@ -3,56 +3,36 @@
   "WorkspaceRootPath": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\model\\zonaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:model\\zonaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\zona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\zona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\edicioevent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\edicioevent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\tipusevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\tipusevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\edicioevent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\edicioevent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\eventspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\eventspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\eventspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\eventspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\eventdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\eventdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 381,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,46 +82,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Zona.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Zona.cs",
+              "RelativeDocumentMoniker": "ModelStandard\\model\\Zona.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Zona.cs",
+              "RelativeToolTip": "ModelStandard\\model\\Zona.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T16:47:37.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ZonaView.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Model\\ZonaView.cs",
+              "RelativeDocumentMoniker": "Model\\ZonaView.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Model\\ZonaView.cs",
+              "RelativeToolTip": "Model\\ZonaView.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAArwB0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T16:47:18.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EdicioSala.xaml.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml.cs",
               "RelativeDocumentMoniker": "Views\\EdicioSala.xaml.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml.cs",
               "RelativeToolTip": "Views\\EdicioSala.xaml.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAiwDcAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAA7wNAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T17:48:40.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TipusEvent.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\TipusEvent.cs",
-              "RelativeDocumentMoniker": "ModelStandard\\model\\TipusEvent.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\TipusEvent.cs",
-              "RelativeToolTip": "ModelStandard\\model\\TipusEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T17:43:59.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EdicioEvent.xaml.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioEvent.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\EdicioEvent.xaml.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioEvent.xaml.cs",
-              "RelativeToolTip": "Views\\EdicioEvent.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T17:43:20.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "EdicioSala.xaml",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml",
               "RelativeDocumentMoniker": "Views\\EdicioSala.xaml",
@@ -153,64 +133,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EdicioEvent.xaml",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioEvent.xaml",
-              "RelativeDocumentMoniker": "Views\\EdicioEvent.xaml",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioEvent.xaml",
-              "RelativeToolTip": "Views\\EdicioEvent.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-13T17:09:12.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Event.cs",
-              "RelativeDocumentMoniker": "ModelStandard\\model\\Event.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Event.cs",
-              "RelativeToolTip": "ModelStandard\\model\\Event.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:43:51.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Sala.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Sala.cs",
               "RelativeDocumentMoniker": "ModelStandard\\model\\Sala.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Sala.cs",
               "RelativeToolTip": "ModelStandard\\model\\Sala.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAywBQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAewCoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T16:38:42.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EventDB.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\EventDB.cs",
-              "RelativeDocumentMoniker": "DB\\EventDB.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\EventDB.cs",
-              "RelativeToolTip": "DB\\EventDB.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwEIBAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T18:20:39.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "SalaDB.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
               "RelativeDocumentMoniker": "DB\\SalaDB.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
               "RelativeToolTip": "DB\\SalaDB.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwDQAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAqwIsBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T18:18:16.146Z",
               "EditorCaption": ""
@@ -218,31 +160,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "EventsPage.xaml.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\EventsPage.xaml.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml.cs",
-              "RelativeToolTip": "Views\\EventsPage.xaml.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAQwJUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T18:15:16.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EventsPage.xaml",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml",
-              "RelativeDocumentMoniker": "Views\\EventsPage.xaml",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EventsPage.xaml",
-              "RelativeToolTip": "Views\\EventsPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-10T18:14:11.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "SalasPage.xaml",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml",
               "RelativeDocumentMoniker": "Views\\SalasPage.xaml",
@@ -254,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SalasPage.xaml.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\SalasPage.xaml.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml.cs",
               "RelativeToolTip": "Views\\SalasPage.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAmwE8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAQwFMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T15:30:48.953Z",
               "EditorCaption": ""

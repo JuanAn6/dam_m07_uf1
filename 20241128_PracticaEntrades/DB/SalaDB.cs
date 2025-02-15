@@ -304,7 +304,9 @@ namespace DB
                         {
                             filesAfectades = consulta.ExecuteNonQuery();
 
-                            if (filesAfectades == 1)
+                            insertZonesOfSala(d.Zones, d.Id)
+
+                            if (filesAfectades > 1)
                             {
                                 trans.Commit();
                                 return true;
@@ -327,6 +329,12 @@ namespace DB
                 }
             }
         }
+
+        private static void insertZonesOfSala(List<Zona> zones, int id)
+        {
+            throw new NotImplementedException();
+        }
+
 
         public static bool updateSala(Sala d)
         {
@@ -385,36 +393,7 @@ namespace DB
 
 
         }
-        /*
-        private static decimal lastIdSalas(DbCommand consulta, DbTransaction trans)
-        {
-            // query SQL
-            consulta.CommandText = @"select last_id from ids where table_name='Sala' for update"; //for update; per fer que la taula es bloquegi
-
-            //Necessari per que la consulta estigui en la transacció
-            consulta.Transaction = trans;
-
-            decimal last_id = (decimal)consulta.ExecuteScalar();
-
-            return last_id;
-
-
-        }
-        private static void lastIdSalasIncrement(DbCommand consulta, DbTransaction trans, decimal num)
-        {
-            // query SQL
-            consulta.CommandText = @"update ids set last_id = @num where table_name='Sala' "; //for update; per fer que la taula es bloquegi
-
-            //Necessari per que la consulta estigui en la transacció
-            consulta.Transaction = trans;
-
-            DBUtils.createParam(consulta, num, "num", System.Data.DbType.Decimal);
-
-            consulta.ExecuteNonQuery();
-
-        }
-        */
-
+        
 
 
     }
