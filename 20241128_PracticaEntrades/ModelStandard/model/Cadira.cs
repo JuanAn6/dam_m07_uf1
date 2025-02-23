@@ -11,7 +11,7 @@ namespace _20241128_PracticaEntrades.Model
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private long id;
+        private int id;
         private int x, y;
 
         public Cadira(int x, int y)
@@ -24,5 +24,9 @@ namespace _20241128_PracticaEntrades.Model
         {
             return "(x: "+x+", "+y+")";
         }
+
+        public int Id { get { return id; } set { id = value; } }
+        public int X { get { return x; } set { x = value; } }
+        public int Y { get { return y; } set { y = value; } }
     }
 }

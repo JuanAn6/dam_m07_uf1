@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace _20241128_PracticaEntrades.Model
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public ZonaView(Zona z) : base(z.Desc, z.Nom, z.Numero, z.Capacitat, z.Color)
+        public ZonaView(Zona z) : base(z.Desc, z.Nom, z.Numero, z.Capacitat, z.Color, z.Cadires)
         {
         }
 

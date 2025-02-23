@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\model\\zonaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\cadira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\cadira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\model\\zonaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:model\\zonaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\zona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\ediciosala.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\views\\salaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF13F30E-408A-4538-AE87-700F65A360B9}|20241128_PracticaEntrades.csproj|solutionrelative:views\\salaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB03F22A-ACA9-48F0-B36D-09F2BCB396B0}|DB\\DB.csproj|solutionrelative:db\\saladb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|c:\\dam2\\m07\\uf1\\20241128_practicaentrades\\modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80586491-DA64-4DD0-8D42-89FD5A499355}|ModelStandard\\ModelStandard.csproj|solutionrelative:modelstandard\\model\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 381,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,104 +81,106 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Zona.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Zona.cs",
               "RelativeDocumentMoniker": "ModelStandard\\model\\Zona.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Zona.cs",
               "RelativeToolTip": "ModelStandard\\model\\Zona.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T16:47:37.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T16:47:37.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cadira.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Cadira.cs",
+              "RelativeDocumentMoniker": "ModelStandard\\model\\Cadira.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Cadira.cs",
+              "RelativeToolTip": "ModelStandard\\model\\Cadira.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:20:41.732Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ZonaView.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Model\\ZonaView.cs",
-              "RelativeDocumentMoniker": "Model\\ZonaView.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Model\\ZonaView.cs",
-              "RelativeToolTip": "Model\\ZonaView.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAArwB0AAAA6AAAAAAAAAA==",
+              "Title": "Sala.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Sala.cs",
+              "RelativeDocumentMoniker": "ModelStandard\\model\\Sala.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Sala.cs",
+              "RelativeToolTip": "ModelStandard\\model\\Sala.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T16:47:18.337Z",
+              "WhenOpened": "2025-02-13T16:38:42.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SalaDB.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
+              "RelativeDocumentMoniker": "DB\\SalaDB.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
+              "RelativeToolTip": "DB\\SalaDB.cs",
+              "ViewState": "AgIAAOoBAAAAAAAAAAAgwPIBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:18:16.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ZonaView.cs",
+              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Model\\ZonaView.cs",
+              "RelativeDocumentMoniker": "Model\\ZonaView.cs",
+              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Model\\ZonaView.cs",
+              "RelativeToolTip": "Model\\ZonaView.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAvwB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T16:47:18.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EdicioSala.xaml.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml.cs",
               "RelativeDocumentMoniker": "Views\\EdicioSala.xaml.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml.cs",
               "RelativeToolTip": "Views\\EdicioSala.xaml.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAswOEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAuwBABAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T17:48:40.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EdicioSala.xaml",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml",
-              "RelativeDocumentMoniker": "Views\\EdicioSala.xaml",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\EdicioSala.xaml",
-              "RelativeToolTip": "Views\\EdicioSala.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-13T17:10:20.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Sala.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Sala.cs",
-              "RelativeDocumentMoniker": "ModelStandard\\model\\Sala.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\ModelStandard\\model\\Sala.cs",
-              "RelativeToolTip": "ModelStandard\\model\\Sala.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAywBQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:38:42.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SalaDB.cs",
-              "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
-              "RelativeDocumentMoniker": "DB\\SalaDB.cs",
-              "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\DB\\SalaDB.cs",
-              "RelativeToolTip": "DB\\SalaDB.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwDQAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T18:18:16.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "SalasPage.xaml",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml",
               "RelativeDocumentMoniker": "Views\\SalasPage.xaml",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml",
               "RelativeToolTip": "Views\\SalasPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-12T19:12:18.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T19:12:18.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "SalasPage.xaml.cs",
               "DocumentMoniker": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\SalasPage.xaml.cs",
               "ToolTip": "C:\\DAM2\\M07\\UF1\\20241128_PracticaEntrades\\Views\\SalasPage.xaml.cs",
               "RelativeToolTip": "Views\\SalasPage.xaml.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAQwFMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwFMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:30:48.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T15:30:48.953Z"
             }
           ]
         },

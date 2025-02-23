@@ -14,7 +14,7 @@ namespace _20241128_PracticaEntrades.Model
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
-
+        private int id;
         private string desc;
         private string nom;
         private int numero;
@@ -45,6 +45,12 @@ namespace _20241128_PracticaEntrades.Model
             set { numero = value; }
         }
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         public int Capacitat
         {
             get { return capacitat; }
@@ -65,6 +71,37 @@ namespace _20241128_PracticaEntrades.Model
             Capacitat = capacitat;
             Color = color;
             Cadires = new List<Cadira>();
+        }
+        public Zona(string desc, string nom, int numero, int capacitat, string color, List<Cadira> cadires)
+        {
+            Desc = desc;
+            Nom = nom;
+            Numero = numero;
+            Capacitat = capacitat;
+            Color = color;
+            Cadires = cadires;
+        }
+
+        public Zona(int id, string desc, string nom, int numero, int capacitat, string color)
+        {
+            Id = id;
+            Desc = desc;
+            Nom = nom;
+            Numero = numero;
+            Capacitat = capacitat;
+            Color = color;
+            Cadires = new List<Cadira>();
+        }
+
+        public Zona(int id, string desc, string nom, int numero, int capacitat, string color, List<Cadira> cadires)
+        {
+            Id = id;
+            Desc = desc;
+            Nom = nom;
+            Numero = numero;
+            Capacitat = capacitat;
+            Color = color;
+            Cadires = cadires;
         }
 
         public override string ToString()

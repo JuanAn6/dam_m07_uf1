@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-02-15T17:32:18.803</Modified>
+      <Modified>2025-02-19T20:02:55.629</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\20241128_PracticaEntrades.exe">
       <PackagePath>entrypoint\20241128_PracticaEntrades.exe</PackagePath>
-      <Modified>2025-02-15T17:32:15.679</Modified>
+      <Modified>2025-02-19T20:02:54.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -140,11 +140,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\DB\bin\Debug\netstandard2.0\DB.dll">
       <PackagePath>DB.dll</PackagePath>
-      <Modified>2025-02-13T16:46:13.669</Modified>
+      <Modified>2025-02-19T20:02:48.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\ModelStandard\bin\Debug\netstandard2.0\ModelStandard.dll">
       <PackagePath>ModelStandard.dll</PackagePath>
-      <Modified>2025-02-13T16:46:13.447</Modified>
+      <Modified>2025-02-19T19:36:57.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -214,39 +214,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.237</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\UserControls\PaginationControl.xbf">
       <PackagePath>UserControls\PaginationControl.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.237</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\UserControls\UCZona.xbf">
       <PackagePath>UserControls\UCZona.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.237</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioEvent.xbf">
       <PackagePath>Views\EdicioEvent.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.208</Modified>
+      <Modified>2025-02-19T20:02:54.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EdicioSala.xbf">
       <PackagePath>Views\EdicioSala.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.211</Modified>
+      <Modified>2025-02-19T20:02:54.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\EventsPage.xbf">
       <PackagePath>Views\EventsPage.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.237</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\HomePage.xbf">
       <PackagePath>Views\HomePage.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.241</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.241</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Views\SalasPage.xbf">
       <PackagePath>Views\SalasPage.xbf</PackagePath>
-      <Modified>2025-02-15T17:32:15.241</Modified>
+      <Modified>2025-02-19T20:02:54.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22621.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -262,7 +262,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DAM2\M07\UF1\20241128_PracticaEntrades\bin\x86\Debug\Core\20241128_PracticaEntrades.exe">
       <PackagePath>20241128_PracticaEntrades.exe</PackagePath>
-      <Modified>2025-02-15T17:32:18.794</Modified>
+      <Modified>2025-02-19T20:02:55.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Juan Antonio\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

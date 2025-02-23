@@ -23,6 +23,7 @@ using System.Diagnostics;
 using System.Collections.ObjectModel;
 using _20241128_PracticaEntrades.Model;
 using DB;
+using Windows.UI.Xaml.Automation.Peers;
 
 
 
@@ -49,6 +50,20 @@ namespace _20241128_PracticaEntrades.Views
 
         private Color SelectedColor;
 
+
+
+        public Sala SalaEdit
+        {
+            get { return (Sala)GetValue(SalaEditProperty); }
+            set { SetValue(SalaEditProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for SalaEdit.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty SalaEditProperty =
+            DependencyProperty.Register("SalaEdit", typeof(Sala), typeof(EdicioSala), new PropertyMetadata(null));
+
+
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -61,13 +76,18 @@ namespace _20241128_PracticaEntrades.Views
                 Sala s = e.Parameter as Sala;
 
                 Debug.WriteLine("Sala edit: " + s);
-            
+
+                SalaEdit = SalaDB.GetSala(s.Id);
+
+                Debug.WriteLine("Sala edit selected: " + s.ToString());
             }
         }
 
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            
+            Debug.WriteLine("Page loaded: "+SalaEdit.ToString());
             
             //Preparació de la vista de columns i rows
             List<int> rows = new List<int>();
@@ -77,24 +97,57 @@ namespace _20241128_PracticaEntrades.Views
             tb_rows.ItemsSource = rows;
             tb_columns.ItemsSource = columns;
 
-            tb_columns.SelectedIndex = 5;
-            tb_rows.SelectedIndex = 5;
+            tb_columns.SelectedIndex = SalaEdit.NumColumnes;
+            tb_rows.SelectedIndex = SalaEdit.NumFiles;
 
 
             RenderBoxSalaGrid();
 
+            list_zones.Clear();
+            
+            foreach(Zona z in SalaEdit.Zones)
+            {
+                ZonaView zv = new ZonaView(z);
+                list_zones.Add(zv);
+                paintCanvasSala(zv);
+            }
+
+            tb_nom.Text = SalaEdit.Nom;
+            tb_municipi.Text = SalaEdit.Municipi;
+            tb_adreca.Text = SalaEdit.Adreca;
 
             //Zones de exemple
 
-            list_zones.Clear();
             //list_zones.Add(new ZonaView(new Zona("Desc zona 1", "Zona 1", 1, 20, "#caa588")));
             //list_zones.Add(new ZonaView(new Zona("Desc zona 2", "Zona 2", 2, 20, "#88ca95")));
             //list_zones.Add(new ZonaView(new Zona("Desc zona 3", "Zona 3", 3, 20, "#88b9ca")));
             //list_zones.Add(new ZonaView(new Zona("Desc zona 4", "Zona 4", 4, 20, "#a788ca")));
 
             tb_llista_zones.ItemsSource = list_zones;
+
         }
 
+        private void paintCanvasSala(Zona z)
+        {
+            UIElementCollection uiec = grid_sala.Children;
+
+            SolidColorBrush scb = ((ZonaView)z).SolidColor;
+            Debug.WriteLine("Count de cadires: " + z.Cadires.Count());
+            
+            foreach(UIElement uie in uiec)
+            {
+                if (uie is StackPanel)
+                {
+                    StackPanel sp = uie as StackPanel;
+                    Point p = (Point)sp.Tag;
+                    bool valor = z.Cadires.Any(c => c.X == (int)p.X && c.Y == (int)p.Y);
+                    if (valor)
+                    {
+                        sp.Background = scb;
+                    }
+                }
+            }
+        }
 
         private void RenderBoxSalaGrid()
         {
@@ -194,7 +247,7 @@ namespace _20241128_PracticaEntrades.Views
 
         private void Button_Save_Click(object sender, RoutedEventArgs e)
         {
-
+            
             List<Zona> list = new List<Zona>();
             foreach(Zona z in list_zones)
             {
@@ -202,11 +255,26 @@ namespace _20241128_PracticaEntrades.Views
                 Debug.WriteLine("Zones: " + z.ToString());
             }
 
-            Sala sala_save = new Sala(tb_nom.Text, tb_adreca.Text, tb_municipi.Text, (int)tb_columns.SelectedItem, (int)tb_rows.SelectedItem, true, list);
+            if(SalaEdit == null)
+            {
 
-            Debug.WriteLine(sala_save.ToString());
+                Sala sala_save = new Sala(tb_nom.Text, tb_adreca.Text, tb_municipi.Text, (int)tb_columns.SelectedItem, (int)tb_rows.SelectedItem, true, list);
 
-            SalaDB.insertSala(sala_save);
+                Debug.WriteLine(sala_save.ToString());
+
+                SalaDB.insertSala(sala_save);
+            }
+            else
+            {
+                Debug.WriteLine("Update sala!");
+
+                Sala sala_update = new Sala(SalaEdit.Id, tb_nom.Text, tb_adreca.Text, tb_municipi.Text, (int)tb_columns.SelectedItem, (int)tb_rows.SelectedItem, true, list);
+
+                SalaDB.updateSala(sala_update);
+
+
+            }
+
 
         }
 

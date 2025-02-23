@@ -53,6 +53,18 @@ namespace _20241128_PracticaEntrades.Model
             Zones = zones;
         }
 
+        public Sala(int id, string nom, string adreca, string municipi, int numColumnes, int numFiles, bool teMapa, List<Zona> zones)
+        {
+            Id = id;
+            Nom = nom;
+            Adreca = adreca;
+            Municipi = municipi;
+            NumColumnes = numColumnes;
+            NumFiles = numFiles;
+            TeMapa = teMapa;
+            Zones = zones;
+        }
+
 
         public override string ToString()
         {
